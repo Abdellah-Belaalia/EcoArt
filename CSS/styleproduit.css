@@ -1,0 +1,23 @@
+*{
+  display: block;
+}
+.pasheader p{
+  font-size: 10px;
+  display: grid;
+  margin-top: 0px;
+  margin-bottom: 1px;
+
+}
+.eyebrow{
+  color: var(--soustitre-botun);
+}
+.impac{
+  display: flex;
+  padding: 30px 60px ;
+  gap: 70px;
+  border-radius: 10px;
+  border: 3px solid #2d5a43;
+}
+.rocherch{
+
+}
