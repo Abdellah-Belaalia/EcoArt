@@ -1,0 +1,22 @@
+:root{
+    /*le colore */
+   --primary-color: #14422d;
+   --primary-medium: #2d5a43;
+   --primary-hover: #2d5a43;
+   --primary-soft: #e1ebe3;
+   --primary-tint: #91c0a4; 
+   --accent-color: #944931;
+    --accent-soft: #f4e4de;
+    /* FONDS ET BORDURES */
+  --background-color: #f2fcf4; 
+  --background-alt: #e6f0e8;          
+  --surface-soft: #ecf6ee;         
+  --surface-da: #14422d;         
+  --border-color: #e0eae2;      
+
+
+
+
+
+
+}
