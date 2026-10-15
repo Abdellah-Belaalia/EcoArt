@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.Hero_section{
+   background-color: #F2FCF4; ;
+}
+.titre #p1{
+    color: #14422D;
+    margin-top:6px
+}
+.test{
+    display:flex;
+    background-color: #E6F0E8;
+    width: 310px;
+    gap:8px;
+    border-radius:20px;
+
+}
+h1{
+    font-family: space Grotesk ;
+}
