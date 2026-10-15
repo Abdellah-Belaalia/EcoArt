@@ -13,15 +13,29 @@ html {
     display: flex;
     justify-content: space-around;
     padding: 15px 40px;
+    align-items: center;
 
 }
 .pos1 {
     display: flex;
     justify-content:space-around;
 
+
 }
 .menu {
     display: flex;
     gap: 20px;
 
+}
+li{
+   list-style : none; 
+   margin-right: 10px;
+} 
+a {
+    text-decoration: none;
+
+}
+.header-1{
+    background-color: brown;
+    height: 100px;
 }
