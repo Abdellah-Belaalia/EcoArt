@@ -7,7 +7,33 @@
 html {
   scroll-behavior: smooth;
   display: flex;
+  background: linear-gradient(0deg, #f2fcf4, #f2fcf4), #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  isolation: isolate;
 }
+
+#logo {
+  width: 160px;
+  height: auto;
+}
+
+/* Accueil - EcoArt */
+
+/* Mise en page automatique */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+position: relative;
+width: 1280px;
+height: 4685px;
+overflow-y: scroll;
+
 ul {
   list-style: none;
 }
@@ -24,8 +50,8 @@ ul {
   align-items: flex-start;
   top: 0;
   z-index: 10;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #E5E7EB;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
 }
 .en-tete-contenu {
   height: 80px;
@@ -37,10 +63,10 @@ ul {
 .logo {
   display: flex;
   align-items: center;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #0F1B2D;
+  color: #0f1b2d;
 }
 
 .menu {
@@ -64,8 +90,6 @@ ul {
   border-bottom-color: green;
 }
 
-
-
 .carte {
   display: flex;
   flex-direction: column;
@@ -84,7 +108,6 @@ gap: 115.8px;
 width: 1280px;
 max-width: 1360px;
 height: 80px;
-
 
 /* À l'intérieur de l'auto layout */
 flex: none;
@@ -106,8 +129,7 @@ left: 0px;
 right: 0px;
 top: 1032.5px;
 
-background: #F2FCF4;
-
+background: #f2fcf4;
 
 /* Container */
 
@@ -122,13 +144,11 @@ gap: 247.92px;
 width: 1232px;
 height: 72px;
 
-
 /* À l'intérieur de l'auto layout */
 flex: none;
 order: 0;
 align-self: stretch;
 flex-grow: 0;
-
 
 /* Filière 1: Bois Revaloris */
 
@@ -142,7 +162,7 @@ gap: 34px;
 width: 290px;
 height: 439.5px;
 
-background: #ECF6EE;
+background: #ecf6ee;
 box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 border-radius: 8px;
 
@@ -150,4 +170,3 @@ border-radius: 8px;
 flex: none;
 order: 0;
 flex-grow: 1;
-
