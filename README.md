@@ -9,3 +9,4 @@ Bienvenue sur le projet EcoArt. Vous trouverez ci-dessous les liens vers nos maq
 ##  Maquette Figma - Responsive
 Voici la version adaptée pour les écrans de tablette :
 - [Voir la maquette Tablette](https://www.figma.com/design/eJPFw2QBbBnVMgmPvTKv0B/EcoArt-Tabel-Version?node-id=15-6303&t=DdnXXq7KX3uycotP-1)
+
