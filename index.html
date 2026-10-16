@@ -1,13 +1,311 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <head>
-        <nav></nav>
-    </head>
-</body>
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="en-tete">
+      <div class="conteneur en-tete-contenu">
+        <a href="index.html" class="logo">
+          <img src="assets/icons/logo.png" alt="logo" id="logo" /></a
+        >
+
+        <nav aria-label="Navigation principale">
+          <ul class="menu">
+            <li><a href="index.html" class="lien-actif">Accueil</a></li>
+            <li><a href="produit.html">Catalogue Produits - EcoArt</a></li>
+            <li><a href="artisans.html">Nos Artisans - EcoArt</a></li>
+            <li><a href="service.html">Ateliers & Services - EcoArt</a></li>
+            <li><a href="impact.html">Impact & Contact - EcoArt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-banner">
+        <article class="hero-content">
+          <!-- cet article rassemble le div pour applique de gap/margin -->
+
+          <div class="text-hero">
+            <!-- cette division rassemble le texte de hero section -->
+            <div class="haute-titre-hero-text">
+              <img class="image" src="assets/icons/leaf-fill.svg" alt="" />
+              <p class="hero_description">
+                ÉCO-SCORE A+ • EMPREINTE MATÉRIELLE NEUTRE
+              </p>
+            </div>
+
+            <h1>
+              Donner une seconde vie aux matières, créer du beau pour demain.
+            </h1>
+
+            <p>
+              EcoArt relie le design contemporain à l'économie régénérative.
+              Nous transformons les rebuts nobles — chutes de chêne séculaire,
+              textiles dormants et verre soufflé — en objets d'exception conçus
+              par 42 maîtres artisans.
+            </p>
+          </div>
+          <div class="hero-section-button">
+            <div>
+              <a href="produit.html">
+                <button>Explorer le catalogue</button>
+              </a>
+              <!-- <img src="assets/icons/flèche.svg" alt="" /> -->
+            </div>
+
+            <div>
+              <img src="assets/icons/white_hammer.svg" alt="" />
+              <a href="service.html">
+                <button>Participer à un atelier</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="transparence-text">
+            <div>
+              <img src="assets/icons/accueil-icons/Container (1).svg" alt="" />
+              <p>Traçabilité 100% Locale</p>
+            </div>
+            <div>
+              <img src="assets/icons/accueil-icons/Icon (3).svg" alt="" />
+              <p>Label Upcycling Métiers d'Art</p>
+            </div>
+            <div>
+              <img src="assets/icons/accueil-icons/Icon (4).svg" alt="" />
+              <p>Circuits Courts Métropolitains</p>
+            </div>
+          </div>
+        </article>
+        <div class="visual-hero">
+          <!-- cet division rassemble l'image et le contenu -->
+          <img class="image" src="assets/image/accueil-1.svg" alt="" />
+          <div class="visual-hero-content">
+            <!-- background Hero visual Compisition -->
+            <p>PIÈCE SIGNATURE DU MOIS</p>
+            <h4>Console "Estran" • Chêne d'église & Verre cullet</h4>
+            <div class="visual-sous-titre">
+              <p>Façonné par l'Atelier Solstice (Nantes)</p>
+              <h5>1/1 Unique</h5>
+            </div>
+            <div class="carte_badge">
+              <img class="image" src="assets/icons/economie.svg" alt="" />
+              <div class="badge-contenu">
+                <h5>-82%</h5>
+                <p>Émissions de CO₂ par rapport au neuf</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="chiffres"></section>
+
+
+      <section class="filieres">
+        <div class="en-tete-filieres">
+          <div class="element1">
+            <p>SOURCING VERTUEUX</p>
+            <h2>Les 4 Grandes Filières Circulaires</h2>
+          </div>
+          <div class="element2">
+            <p>
+              Chaque gisement est sauvé de l'oubli grâce à des protocoles de tri
+              drastiques et la complicité d'usines locales responsables.
+            </p>
+          </div>
+        </div>
+
+        <div class="filieres-cases">
+          <article class="filiere-carte">
+            <div class="contenu-carte">
+              <div class="titre-carte">
+                <div class="tete-carte">
+                  <img src="assets/icons/accueil-icons/Icon (9).svg" alt="" />
+                  <p>Filière 01</p>
+                </div>
+                <p>Gisement : 4,8 T</p>
+              </div>
+              <h3>Bois de Réemploi</h3>
+              <p>
+                Chênes séculaires issus de déconstructions de granges normandes,
+                chutes massives d'ateliers et palettes traitées sans chimie.
+              </p>
+            </div>
+            <img src="assets/image/accueil-2.svg" alt="" />
+          </article>
+          <article class="filiere-carte">
+            <div class="contenu-carte">
+              <div class="titre-carte">
+                <div class="tete-carte">
+                  <img src="assets/icons/accueil-icons/Icon (10).svg" alt="" />
+                  <p>Filière 02</p>
+                </div>
+                <p>Gisement : 3,1 T</p>
+              </div>
+              <h3>Tissus & Lin Surcyclés</h3>
+              <p>
+                Fins de rouleaux haute couture, toiles de chanvre vintage et
+                lins lavés non utilisés collectés auprès de filatures des
+                Hauts-de-France.
+              </p>
+            </div>
+            <img src="assets/image/accueil-3.svg" alt="" />
+          </article>
+
+          <article class="filiere-carte">
+            <div class="contenu-carte">
+              <div class="titre-carte">
+                <div class="tete-carte">
+                  <img src="assets/icons/accueil-icons/Icon (11).svg" alt="" />
+                  <p>Filière 03</p>
+                </div>
+                <p>Gisement : 3,9 T</p>
+              </div>
+              <h3>Verre Fused & Soufflé</h3>
+              <p>
+                Bouteilles de domaines viticoles et chutes de miroiterie fondues
+                au four solaire pour créer des textures organiques bulleuses.
+              </p>
+            </div>
+            <img src="assets/image/accueil-4.svg" alt="" />
+          </article>
+
+          <article class="filiere-carte">
+            <div class="contenu-carte">
+              <div class="titre-carte">
+                <div class="tete-carte">
+                  <img src="assets/icons/accueil-icons/Icon (12).svg" alt="" />
+                  <p>Filière 04</p>
+                </div>
+                <p>Gisement : 2,4 T</p>
+              </div>
+              <h3>Plastique Terrazzo</h3>
+              <p>
+                Bouchons PEHD et bouteilles collectés en circuits scolaires puis
+                thermocompressés pour façonner des plateaux ultra-résistants et
+                marbrés.
+              </p>
+            </div>
+            <img src="assets/image/accueil-5.svg" alt="" />
+          </article>
+        </div>
+      </section>
+
+      <section class="nouveaute">
+        <div class="en-tete-nouveaute">
+          <div class="element1">
+            <p>CRÉATIONS RÉVÉLÉES</p>
+            <h2>Nouveautés & Coups de Cœur</h2>
+          </div>
+          <div class="element2">
+            <a href="catalogue.html" class="lien-toutes-pieces">Consulter toutes les pièces</a> <!--ajouter un fléche-->
+          </div>
+        </div>
+
+        <div class="produit-cases">
+          <article class="carte-produit">
+            <div class="produit">
+                <p class="ettiquete1">Bois & Lin</p>
+                <p class="ettiquete2">-4,2 kg CO₂</p>
+              <img src="assets/image/accueil-6.svg" alt="">
+            </div>
+            <div class="produit-container">
+              <p class="info">Atelier Lumina • Rennes</p>
+              <h4>Lampe d'Appoint "Sillon"</h4>
+              <p class="texte">Socle façonné dans une poutre de grange bretonne de 1890 et câble textile</p>
+            </div>
+            <div class="ajouter">
+              <div class="prix-container">
+                <p class="atl-prix">Prix atelier</p>
+                <p class="montant">145 €</p>
+              </div>
+              <button class="ajouter-button">
+                <img src="assets/icons/accueil-icons/Icon (12).svg" alt="" class="panier">
+                Ajouter
+              </button>
+            </div>
+          </article>
+          <article class="carte-produit">
+            <div class="produit">
+                <p class="ettiquete1">Verre Cullet</p>
+                <p class="ettiquete2">-6,8 kg CO₂</p>
+              <img src="assets/image/accueil-7.svg" alt="">
+            </div>
+            <div class="produit-container">
+              <p class="info">Verrerie d'Éden • Biot</p>
+              <h4>Soliflore "Ondée"</h4>
+              <p class="texte">Bouteilles champenoises fondues au four électrique alimenté par…</p>
+            </div>
+            <div class="ajouter">
+              <div class="prix-container">
+                <p class="atl-prix">Prix atelier</p>
+                <p class="montant">68 €</p>
+              </div>
+              <button class="ajouter-button">
+                <img src="assets/icons/accueil-icons/Icon (12).svg" alt="" class="panier">
+                Ajouter
+              </button>
+            </div>
+          </article>
+          <article class="carte-produit">
+            <div class="produit">
+                <p class="ettiquete1">Plastique PEHD</p>
+                <p class="ettiquete2">-3,1 kg CO₂</p>
+              <img src="assets/image/accueil-8.svg" alt="">
+            </div>
+            <div class="produit-container">
+              <p class="info">Atelier Re-Form • Lyon</p>
+              <h4>Plateau "Granulat"</h4>
+              <p class="texte">Élaboré à partir de 240 bouchons collectés par une association sportive…</p>
+            </div>
+            <div class="ajouter">
+              <div class="prix-container">
+                <p class="atl-prix">Prix atelier</p>
+                <p class="montant">82 €</p>
+              </div>
+              <button class="ajouter-button">
+                <img src="assets/icons/accueil-icons/Icon (12).svg" alt="" class="panier">
+                Ajouter
+              </button>
+            </div>
+          </article>
+          <article class="carte-produit">
+            <div class="produit">
+                <p class="ettiquete1">Voile & Cuir</p>
+                <p class="ettiquete2">-5,5 kg CO₂</p>
+              <img src="assets/image/accueil-9.svg" alt="">
+            </div>
+            <div class="produit-container">
+              <p class="info">Voilerie Sauvée • Lorient</p>
+              <h4>Cabas "Alizé 04"</h4>
+              <p class="texte">Spinnaker de régate réformé assemblé à des chutes de sellerie équestre…</p>
+            </div>
+            <div class="ajouter">
+              <div class="prix-container">
+                <p class="atl-prix">Prix atelier</p>
+                <p class="montant">115 €</p>
+              </div>
+              <button class="ajouter-button">
+                <img src="assets/icons/accueil-icons/Icon (12).svg" alt="" class="panier">
+                Ajouter
+              </button>
+            </div>
+          </article>
+        </div>
+
+      </section>
+      <section class="Valeurs"></section>
+      <section class="Ateliers"></section>
+      <section class="call_action"></section>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
