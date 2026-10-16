@@ -5,7 +5,7 @@
 }
 
 .Hero_section{
-   background-color: #F2FCF4; ;
+   background-color: #F2FCF4;
 }
 .titre #p1{
     color: #14422D;
@@ -21,4 +21,36 @@
 }
 h1{
     font-family: space Grotesk ;
+}
+.img{
+    position: relative;
+}
+
+.rajaa{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    background-color: #E6F0E8;
+    width: 220px;
+    gap:8px;
+    border-radius:20px;
+}
+#bouchra{
+    background-color:#944931;
+    position: absolute;
+    display: flex;
+    top:220px ;
+    right: -370px;
+    color:#FFFFFF;
+}
+.inclus{
+    display: flex;
+    width: 310px;
+    gap:8px;
+}
+.container{
+    display: flex;
+}
+.section{
+    background-color:  #F2FCF4;
 }
