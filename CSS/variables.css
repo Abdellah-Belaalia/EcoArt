@@ -7,7 +7,7 @@
   --carte-colore: #ECF6EE;
   --paragraphe: #414943; 
   --soustitre-botun: #944931;
-  --colore-fond: #F2FCF4;
+  --colore-fond: #F2FCF4; 
 
     
   /* Packground et les pordare */
@@ -26,17 +26,20 @@
 
 
   /* la tai de texte */
-  --font-size-xs: 0.75rem;         
-  --font-size-sm: 0.875rem;        
-  --font-size-base: 1rem;          
-  --font-size-md: 1.125rem;      
-  --font-size-h4: 20px;        
-  --font-size-h3: 26px;            
-  --font-size-h2: 36px;           
-  --font-size-h1: 56px; 
+  --font-xs: 0.75rem;         
+  --font-sm: 0.875rem;        
+  --font-base: 1rem;          
+  --font-md: 1.125rem;      
+  --font-lg: 1.25rem;        
+  --font-xl: 2rem;            
+  --font-2xl: 3rem;           
+  --font-3xl: 3.5rem;
+  /* --font-size-4xl: 3.5rem;
+  --font-size-5xl: 3.5rem;
+  --font-size-6xl: 3.5rem; */
+
 
   /*la police de text */
   --font-main :"space Grotesk", sans-serif;
   --font-second :" Atkinson Hyperlegible Next",arial;
-
 }
