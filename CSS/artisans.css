@@ -1,74 +1,463 @@
+/* =========================================
+   BASE & RESET
+   ========================================= */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-.{
-    display: flex;
-    justify-content: space-around;
-    padding: 15px 40px;
-    align-items: center;
-font-family: var(--font-main);
+body {
+    /* Mkhdemin la police principale */
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--colore-fond);
 }
+
+li {
+    list-style: none; 
+} 
+
+a {
+    text-decoration: none;
+    color: var(--paragraphe); 
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+/* =========================================
+   HEADER & NAV
+   ========================================= */
+.header-1 {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: var(--colore-fond);
+    padding: 15px 40px;
+}
+
 .pos1 {
     display: flex;
-    justify-content:space-around;
-gap:10px;
-
+    justify-content: space-around;
+    gap: 10px;
 }
+
 .pos1 img {
     width: 30px; 
     height: auto;
 }
+
 .menu {
     display: flex;
     align-items: center;
     gap: 25px;
-
 }
-li{
-   list-style : none; 
-} 
-a {
-    text-decoration: none;
-    color: #4a4a4a; 
-    font-size: 0.95rem;
-    font-weight: 500;
 
-}
 .btn-actif {
-     background-color:var(--primary-medium); 
-    color:#9FCFB2;
+    background-color: var(--primary-medium); 
+    color: var(--background-color);
     padding: 8px 16px;
     border-radius: 4px;
 }
-/* .header-1{
-    height: 100px;
-} */
- /* .header-1 {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color:var( --primary-medium ) ;
-padding : 15px 40px;
-font-family:  var(--font-main);
- } */
- .btn-actif:hover {
-    background-color: #1e462d; 
+
+.btn-actif:hover {
+    background-color: var(--primary-hover); 
 }
- .header-1 {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background-color:#F2FCF4 ;
-    
+
+/* =========================================
+   MAIN LAYOUT & HERO SECTION
+   ========================================= */
+.m {
+    background-color: var(--background-color);
+    padding: 40px 60px;
 }
-.m{
-    background:white;
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+    margin-bottom: 50px;
 }
+
+.tag-badge {
+    display: inline-block;
+    background-color: var(--background-meyne);
+    color: var(--titre-icon);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: var(--font-size-2xl);
+    color: var(--titre-icon);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: var(--font-size-md);
+    color: var(--paragraphe);
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    background-color: var(--text-on-primary);
+    color: var(--titre-icon);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    font-size: var(--font-size-sm);
+}
+
+.filter-btn.active {
+    background-color: var(--titre-icon);
+    color: var(--text-on-primary);
+    border-color: var(--titre-icon);
+}
+
+/* Boîte Charte (A droite) */
+.charter-box {
+    background-color: var(--text-on-primary);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.charter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.charter-header h2 {
+    font-size: var(--font-size-xs);
+    color: var(--titre-icon);
+    letter-spacing: 1px;
+}
+
+.audit-badge {
+    color: var(--primary-medium);
+    background-color: var(--surface-soft);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+}
+
+.charter-desc {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.stats-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+.stat-number {
+    font-size: var(--font-size-xl);
+    color: var(--titre-icon);
+    font-weight: bold;
+}
+
+.stat-item h3 {
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+/* Progress bar */
+.flux-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-xs);
+    color: var(--titre-icon);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: var(--border-color);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--titre-icon);
+}
+
+.flux-legend {
+    display: flex;
+    gap: 15px;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.dot.bois { background-color: var(--titre-icon); }
+.dot.verre { background-color: #C0392B; }
+.dot.textiles { background-color: #27AE60; }
+.dot.polymeres { background-color: #7F8C8D; }
+
+/* =========================================
+   ARTISANS GRID & CARDS
+   ========================================= */
+.artisans-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+}
+
+.artisan-card {
+    background-color: var(--text-on-primary);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.artisan-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.artisan-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.artisan-title .category {
+    font-size: 10px;
+    color: var(--text-muted);
+    font-weight: bold;
+}
+
+.artisan-title h2 {
+    font-size: var(--font-size-lg);
+    color: var(--titre-icon);
+    margin: 2px 0;
+}
+
+.artisan-title h4 {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+.status-badge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--background-meyne);
+    color: var(--titre-icon);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.quote {
+    font-size: var(--font-size-sm);
+    color: var(--paragraphe);
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.artisan-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.artisan-tags span {
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.tag-green { background-color: var(--carte-colore); color: var(--primary-medium); }
+.tag-red { background-color: #FDEDEC; color: #C0392B; }
+
+.creations h4 {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+.creation-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.creation-images figure {
+    margin: 0;
+    position: relative;
+}
+
+.creation-images img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.creation-images figcaption {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: var(--text-on-primary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--titre-icon);
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.explore-link {
+    color: var(--link-color);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+
+.reserve-btn {
+    background-color: var(--soustitre-botun); 
+    color: var(--text-on-primary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reserve-btn:hover {
+    opacity: 0.9;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.site-footer {
+    background-color: var(--background-color); 
+    color: var(--text-color); 
+    font-family: var(--font-second); /* Mkhdemin la police 2 hna */
+    padding: 60px 40px 20px 40px;
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.footer-col h3 {
+    color: var(--titre-icon);
+    font-size: var(--font-size-base);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.brand-name {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+    color: var(--titre-icon);
+}
+
+.brand p {
+    margin-bottom: 20px;
+    color: var(--paragraphe);
+}
+
+.eco-badge-footer {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--background-meyne);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: var(--font-size-xs);
+    color: var(--titre-icon);
+}
+
+.links ul { padding: 0; margin: 0; }
+.links li { margin-bottom: 10px; }
+.links a { color: var(--paragraphe); transition: color 0.3s ease; }
+.links a:hover { color: var(--primary-hover); text-decoration: underline; }
+
+.cert-card {
+    background-color: var(--background-meyne);
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.cert-card strong { display: block; color: var(--titre-icon); font-size: 13px; margin-bottom: 4px; }
+.cert-card p { margin: 0; font-size: 12px; color: var(--paragraphe); }
+
+.news-desc { margin-bottom: 15px; color: var(--paragraphe); }
+.news-form { display: flex; gap: 10px; margin-bottom: 10px; }
+.news-form input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 13px;
+}
+.news-form button {
+    background-
