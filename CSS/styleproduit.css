@@ -2,6 +2,7 @@
   display: block;
 }
 body{
+  font-family:var(--font-main);
   padding: 0 5%;
   background-color: var(--background-color);
   font-size:var(--f);
@@ -13,30 +14,52 @@ body{
   margin-bottom: 1px;
 
 }
-.headtext{
-  display: flex;
-  flex-wrap: wrap;
-
+.hero__text{
+  margin-top: 55px;
+}
+.headtext{ 
+  margin: 0;
+  background-color: var(--background-meyne);
 }
 .headtext p{
-  font-size: 10px;
-  width: ;
+  margin: 0;
 }
+
 .eyebrow{
   color: var(--soustitre-botun);
+}
+.titre{
+  padding: 0px 10px;
+}
+.headtext{
+
 }
 .impac{
   display: flex;
   padding: 30px 60px ;
   gap: 70px;
   border-radius: 10px;
-  border: 3px solid #2d5a43;
+  background-color: var(--carte-colore);
+}
+span h1{
+  margin: 10px 10px;
 }
 .police{
   font-size: var(--font-second);
 }
-.rocherch  {
- 
+#rocherch{
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+}
+.div1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.rocherch{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .catalog{
   display: flex;
