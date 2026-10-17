@@ -23,7 +23,7 @@ h2{
     font-size: 28px;
 }
 h3{
-    font-size: var(--font-xs);
+    font-size: var(--font-sm);
 }
 
 img .icons{
@@ -148,11 +148,17 @@ img .icons{
     width: 200px;
     border-radius: 12px; 
 }
+#stat p{
+    color: #14422D;
+}
 .bg_2{
     background-color: #944931;
     height: 10px;
     width: 130px;
     border-radius: 12px;   
+}
+#stat2 p{
+    color: #944931;
 }
 .bg_3{
     background-color: #3A674F;
@@ -160,10 +166,16 @@ img .icons{
     width: 100px; 
     border-radius: 12px; 
 }
+#stat3 p{
+    color: #3A674F;
+}
 .bg_4{
     background-color: #FD9D80;
     height: 10px;
     width: 80px;border-radius: 12px; 
+}
+#stat4 p{
+    color: #FD9D80;
 }
 .redpara{
     color: var(--soustitre-botun);
@@ -244,13 +256,13 @@ div .norme p{
     gap: 8px;
 }
 .locaIcon p {
+
     font-family: var(--font-main);
     color: var(--soustitre-botun);
-    font-size: 16px;
+    font-size: var(--font-sm);
+    margin-top: 16px;
 }
-.titreInfo p{
-    margin-top: 8px;
-}
+
 .iconInfo_contr{
     display: flex;
     gap: 16px;
@@ -333,12 +345,9 @@ textarea{
     display: flex;
     flex-direction: column;
 }
-.check{
-    display: flex;
-    flex-direction: column;
-}
+
 button{
-    width: 100%;
+    width: 50%;
     height: 48px;
     background-color: var(--soustitre-botun);
     border-radius: 8px;
@@ -372,6 +381,8 @@ button{
 .mapIcon_bg{
     background-color: #E6F0E8;
     border-radius: 12px;
+    height: 150px;
+    padding: 8px;
 }
 .mapIcon_bg a{
     color: var(--soustitre-botun);
@@ -393,3 +404,108 @@ a img{
 h1{
     font-size: 3.5rem;
 }
+@media (min-width: 768px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin: 0px 8px 0px 8px;
+        
+        
+    }
+    h2{
+       font-size: var(--font-size-xs);
+    }
+   .scoreboard{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+   }
+   .matricDown1 .para1,.matricDown .para1{
+    font-size: var(--font-xl)
+   }
+   .matricUp1 .para2, .matricUp .para2{
+    font-size: var(--font-xs);
+   }
+   .miseJour{
+    width: 200px;
+    padding-left: 16px;
+   }
+   div .typologie_right{
+    margin-right: 16px;
+   }
+   .bg_1{
+    width: 269px;
+   }
+   .bg_2{
+    width: 168px;
+   }
+   .bg_3{
+    width: 134px;
+   }
+   .bg_4{
+    width: 100px;
+   }
+   .leftColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   }
+   .rightColumn{
+    
+    gap: 16px;
+   }
+   .matiere_para{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+   }
+   .input_1{
+    display: flex;
+    flex-direction: row;
+   }
+   .input_nom{
+    width: 100%;
+   }
+   .lesInput label{
+    margin-left: 8px;
+    font-size: var(--font-xs);
+    margin-bottom: 4px;
+   }
+   .checkBotton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   .checkIcon{
+    align-items: center;
+   }
+   textarea{
+    width: 97%;
+   }
+    .cartMap iframe{
+    height: 360px;
+    
+   }
+   .mapIcon_bg{
+    margin-top: 8px;
+    height: 125px;
+   }
+   .final p{
+    font-size: var(--font-sm);
+   }
+   .final h2{
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-lg);
+    margin-bottom: 8px;
+   }
+  
+
+
+
+
+  
+   }
