@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.places {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 40px;
+
+}
+.pos1 {
+    display: flex;
+    justify-content:space-around;
+
+}
+.menu {
+    display: flex;
+    gap: 20px;
+
+}
