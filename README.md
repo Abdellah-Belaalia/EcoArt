@@ -4,6 +4,8 @@ EcoArt est un projet d'intégration web complet de 5 pages à réaliser en équi
 ##  Maquette Figma - Responsive
 Voici la version adaptée pour les écrans de tablette :
 - [Voir la maquette Tablette](https://www.figma.com/design/eJPFw2QBbBnVMgmPvTKv0B/EcoArt-Tabel-Version?node-id=15-6303&t=DdnXXq7KX3uycotP-1)
+- [Voir la maquette Desktop](https://www.figma.com/design/pyZUNdSx3f6sZ1SfazFamN/EcoArt-Prototype?node-id=1-2&t=jvVrr0E1cjALKnI8-0)
+- [Voir la Charte Graphique](https://www.figma.com/design/iteavgcgF8ZxW1zyrmcKkY/Untitled?node-id=0-1&p=f&t=Um3mCnPJIGLk8kNV-0)
 
 ---
 
@@ -53,6 +55,7 @@ La plateforme est conçue pour être accessible à tous les utilisateurs :
 - **Navigation au clavier** : Support de `Tab`, `Shift + Tab`, et focus visible (`:focus-visible`).
 - **Contraste & Lisibilité** : Vérification stricte des couleurs.
 - **Formulaires** : Labels associés (`<label for="...">`), gestion des erreurs et champs obligatoires.
+
 - **Images** : Attributs `alt` pertinents pour les lecteurs d'écran.
 - **Contrôle Qualité** : Code HTML valide et audits réguliers (Lighthouse, validateurs W3C).
 
