@@ -13,7 +13,7 @@
     
   /* Packground et les pordare */
   --background-color: #F2FCF4; 
-  --background-meyne: #E6F0E8;          
+  --background-meyne: #E6F0E8;       
   --surface-soft: #ecf6ee;       
   --surface-foncée: #14422d; 
   --border-color: #e0eae2; 
@@ -21,9 +21,13 @@
   
   /* les colore de teste */
   --text-color: #151d19;  
-  --text-muted: #6a726c;           
+  --text-muted: #6a726c;
+  --test-p : #414943;  
+  --test-delavee : #717973 ;         
   --text-on-primary: #ffffff;       
   --link-color: #14422d;
+
+
 
 
   /* la tai de texte */
