@@ -14,6 +14,7 @@
 </head>
 <body>
     <main>
+    <section class="first">
     <div class="ContextIndicator">
         <div class="statiIcon">
             <img src="assets/icons/contact-icons/Icon.svg" alt="" class="icons" >
@@ -22,12 +23,15 @@
         
         <h1>Notre Empreinte positive & Parlons-en</h1>
         <p>Mesurer notre impact tangible, certifier chaque gramme détourné des déchargeset co-construire l'artisanat régénératif de demain.</p>
-        <div class="miseJour">
+        
+    </div>
+    <div class="miseJour">
             <img src="assets/icons/contact-icons/Background.svg" alt="" class="icons" id="point" >
             <p>MISE À JOUR CERTIFIÉE <br> <b>T1 2025 · Norme ADEME</b></p>
             
         </div>
-    </div>
+    </section>
+
     <section class="scoreboard">
         <div class="matric">
             <div class="matricUp">
@@ -49,7 +53,7 @@
                 <div class="matricDown1">
                 <p class="para1"><b>32,8t co2e</b></p>
                 <h2>Émissions évitées</h2>
-                <p>Comparé à la production industrielled'équivalents neufs non-circulaires.</p>
+                <p>Comparé à la production industrielle d'équivalents neufs non-circulaires.</p>
             </div>
         </div>
         <div class="matric">
@@ -91,7 +95,7 @@
                 </div>
                 <p id="typologie_para">chaque flux de déchet est répertorié par son origine d'extraction géilocalisée (dans un rayon moyen de 48 km autour des ateliers régionaux). </p>
                 <div class="statistic">
-                    <div class="stat">
+                    <div class="stat" id="stat">
                         <div class="statBar">
                             <img src="assets/icons/contact-icons/22Background.svg" alt="" class="icons">
                             <p>Bois massif de réemploi & chene sauvé</p>
@@ -99,7 +103,7 @@
                         <p>40%</p>
                     </div >
                         <div class="bg_1"></div>
-                    <div class="stat">
+                    <div class="stat" id="stat2">
                         <div class="statBar">
                             <img src="assets/icons/contact-icons/Background (1).svg" alt="" class="icons">
                             <p>Lin & toiles de coton upcyclés</p>
@@ -107,17 +111,17 @@
                         <p class="redpara">25%</p>
                     </div>
                         <div class="bg_2"></div>
-                    <div class="stat">
+                    <div class="stat" id="stat3">
                         <div class="statBar">
-                            <img src="assets/icons/contact-icons/Background (2).svg" alt="" class="icons">
+                            <img src="assets/icons/contact-icons/Background (3).svg" alt="" class="icons">
                             <p>Verre calcin soufflé artisanal</p>  
                         </div>
                         <p>20%</p>
                     </div>
                         <div class="bg_3"></div>
-                    <div class="stat">
+                    <div class="stat" id="stat4">
                         <div class="statBar">
-                            <img src="assets/icons/contact-icons/Background (3).svg" alt="" class="icons">
+                            <img src="assets/icons/contact-icons/Background (2).svg" alt="" class="icons">
                             <p>Plastique techniques thermo-pressés</p>
                         </div> 
                         <p class="redpara">15%</p>
@@ -164,7 +168,7 @@
             </div>
                 <div class="matiere">
                     <img src="assets/image/contact-1.svg" alt="">
-                    <div>
+                    <div class="matiere_para">
                         <p id="matiere_p1">TRACABILITE MATIERE</p>
                         <h2>Le carnet d'identité de l'objet</h2>
                         <p>chaque création EcoArt est frappée d'un numéro de lot mentionnant son site d'extraction d'origine</p>    
@@ -267,16 +271,18 @@
                 <textarea name="message" id="message" placeholder="Parlez-nous de vos dimensions souhaitées, vos flux de matières à réemployer, vos volumes ou vos délais..."></textarea>   
                 <!-- </form> -->
             </div>
-            <div class="check">
+            
                 <div class="checkBox">
-                <input type="checkbox" id="check">
-                <label for="check" id="checklable">J'accepte que mes coordonnées soient traitées par EcoArt pour répondre à ma demande. Données hébergées en France sur serveurs bas-carbone, supprimées sous 90 jours sans suite commerciale</label>
+                    <input type="checkbox" id="check">
+                    <label for="check" id="checklable">J'accepte que mes coordonnées soient traitées par EcoArt pour répondre à ma demande. Données hébergées en France sur serveurs bas-carbone, supprimées sous 90 jours sans suite commerciale</label>
                 </div>
-                <button type="submit">Envoyer mon message éco-responsable <img src="assets/icons/contact-icons/Icon (13).svg" alt="" class="icons"></button>  
-            </div>
-            <div class="checkIcon">
-                <img src="assets/icons/contact-icons/Icon (14).svg" alt="" class="icons">
-                <h3>Réponse artisanale sous 24h ouvrées</h3>
+                <div class="checkBotton">
+                    <button type="submit">Envoyer mon message éco-responsable <img src="assets/icons/contact-icons/Icon (13).svg" alt="" class="icons"></button>  
+                    <div class="checkIcon">
+                        <img src="assets/icons/contact-icons/Icon (14).svg" alt="" class="icons">
+                        <h3>Réponse artisanale sous 24h ouvrées</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -291,7 +297,7 @@
                 </div>
                 <p>En plus du tiers-lieu parisien, nos ateliers de forge, verrerie soaire et tissage se déploient en Nouvelle-Aquitaine, Auvergne-Rhone-Alpes et Bretagne .</p>
                 <a href="#">Découvrir la carte complète des artisans ></a> 
-            </div>
+            </div> 
             
         </div>
     </section>
