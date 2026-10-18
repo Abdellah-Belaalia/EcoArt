@@ -3,11 +3,100 @@
   margin: 0;
   padding: 0;
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
+/* main {
+  max-width: 440px;
+} */
 
 html {
+  width: 100%;
+  background-color: var(--background-color);
   scroll-behavior: smooth;
-  display: flex;
+  /* display: flex; */
+  /* background: linear-gradient(0deg, #f2fcf4, #f2fcf4), #ffffff; */
+  /* flex-direction: column; */
+  align-items: flex-start;
+  padding: 0px;
+  isolation: isolate;
 }
+
+h1 {
+  color: var(--link-color);
+  font-size: var(--font-size-stat);
+}
+
+#logo {
+  width: 160px;
+  height: auto;
+}
+
+.hero-banner {
+  padding: 20px;
+  gap: 25px;
+  border: black solid 2px;
+  width: fit-content;
+  /* max-width: 440px; */
+}
+.hero-banner {
+  position: relative;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 767px; */
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.hero-section-button {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-section-button button {
+  width: 160px;
+  height: 32px;
+}
+
+.image {
+  width: 100%;
+}
+
+div.transparence-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.transparence-text > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+div.transparence-text p {
+  margin: 0;
+  /* white-space: nowrap; */
+}
+
+div.hero-sestion-button {
+  display: grid;
+  grid-template-columns: 40px;
+}
+
 ul {
   list-style: none;
 }
@@ -24,8 +113,8 @@ ul {
   align-items: flex-start;
   top: 0;
   z-index: 10;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #E5E7EB;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
 }
 .en-tete-contenu {
   height: 80px;
@@ -34,17 +123,8 @@ ul {
   justify-content: space-between;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-family: 'Poppins', Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #0F1B2D;
-}
-
 .menu {
-  display: flex;
+  width: 100%;
   gap: 32px;
 }
 
@@ -64,90 +144,316 @@ ul {
   border-bottom-color: green;
 }
 
-
-
 .carte {
   display: flex;
   flex-direction: column;
 }
 
-/* Container */
+.filieres {
+  background-color: red;
+  position: relative;
+  width: fit-content;
+  padding: 32px;
+  padding: 20px;
+  gap: 25px;
+}
 
-/* Mise en page automatique */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 0px 24px;
-gap: 115.8px;
+.filieres .en-tete {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-width: 1280px;
-max-width: 1360px;
-height: 80px;
+.filieres .element1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filieres .filieres-cases {
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.filieres .filiere-carte {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  border-radius: 12px;
+}
+
+.contenu-carte {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.titre-carte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tete-carte {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: blue;
+  border-radius: 6px;
+}
+
+.tete-carte img {
+  width: 20px;
+  height: 20px;
+}
+
+.filiere-carte > img {
+  width: 100%;
+  height: auto;
+}
+
+.nouveaute {
+  background-color: rgb(0, 47, 255);
+  padding: 32px;
+}
+
+.nouveaute .en-tete {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nouveaute .element1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.nouveaute .element2 {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.nouveaute .produit-cases {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.nouveaute .carte-produit {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  border-radius: 12px;
+}
+
+.produit {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.carte-produit {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.ajouter {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* @media (min-width: 1200px) {
+  .filieres-cases {
+    display: flex;
+  }
+} */
+
+.Valeurs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 32px 16px;
+  background-color: red;
+}
+
+.valeurs-contenu {
+  align-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.en-tete-valeurs {
+  text-align: center;
+  padding: 16px;
+}
+
+.carte-valeurs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+  background-color: blue;
+}
+
+.valeurs-carte-contenu {
+  border-radius: 12px;
+  padding: 12px;
+  background-color: green;
+}
+
+.pied-carte-valeurs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.Ateliers {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.atelier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.workshop-carte {
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.workshop-carte img {
+  width: 20px;
+  height: auto;
+}
+
+.visual-ateliers {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.visual-ateliers img {
+  width: auto;
+  height: auto;
+}
+
+.content-ateliers {
+  padding: 24px;
+  padding: 24px;
+  margin: 16px;
+}
+
+.content-ateliers-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-atelier {
+  display: flex;
+  justify-content: start;
+}
+
+.horaire-atelier {
+  display: flex;
+  justify-content: start;
+}
+
+.personne-atelier {
+  display: flex;
+  justify-content: start;
+}
+
+.atelier-question {
+  display: grid;
+  grid-auto-flow: row;
+  align-content: center;
+  align-items: center;
+  justify-items: start;
+  background-color: darkolivegreen;
+  padding: 8px;
+}
+
+.atelier-question img {
+  padding: 4px;
+}
+
+.atelier-reponses1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.atelier-reponses2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.atelier-reponses3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.reserve-atelier {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
 
 
-/* À l'intérieur de l'auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
-/* Section - SECTION LES 4 FILIÈRES DE RECYCLAGE (Visual Bento Grid) */
-
-/* Mise en page automatique */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 40px 0px;
-
-position: absolute;
-height: 631.5px;
-left: 0px;
-right: 0px;
-top: 1032.5px;
-
-background: #F2FCF4;
 
 
-/* Container */
-
-/* Mise en page automatique */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-end;
-padding: 0px;
-gap: 247.92px;
-
-width: 1232px;
-height: 72px;
 
 
-/* À l'intérieur de l'auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
 
 
-/* Filière 1: Bois Revaloris */
 
-/* Mise en page automatique */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 34px;
 
-width: 290px;
-height: 439.5px;
-
-background: #ECF6EE;
-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-border-radius: 8px;
-
-/* À l'intérieur de l'auto layout */
-flex: none;
-order: 0;
-flex-grow: 1;
-
+@media (min-width: 767px) {
+.filieres-cases {
+  display: flex;
+}
+.hero-banner {
+  display: flex;
+  flex-direction: row;
+}
+.visual-ateliers img {
+  width: 240px;
+  height: auto;
+}
+}
