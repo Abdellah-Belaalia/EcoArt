@@ -49,7 +49,7 @@ h1 {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  /* max-width: 767px; */
+  max-width: 100%;
 }
 
 .hero-content {
@@ -183,12 +183,32 @@ ul {
   border-radius: 12px;
 }
 
+.visual-hero {
+  position: relative;
+}
+
+.visual-hero-content {
+  position: absolute;
+  bottom: 10px;
+}
+
 .contenu-carte {
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   flex-grow: 1;
+}
+
+.carte-badge {
+  display: flex;
+  width: fit-content;
+  height: auto;
+}
+
+.carte-badge img {
+  width: 12px;
+  height: auto;
 }
 
 .titre-carte {
@@ -324,9 +344,8 @@ ul {
 }
 
 .Ateliers {
-  position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: red;
@@ -363,8 +382,8 @@ ul {
 }
 
 .visual-ateliers img {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .content-ateliers {
@@ -432,28 +451,161 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  gap: 16px;
+  padding: 16px 0;
 }
 
-
-
-
-
-
-
-
-
-
-@media (min-width: 767px) {
-.filieres-cases {
+.prix-atelier {
   display: flex;
+  align-items: center;
+  width: fit-content;
 }
-.hero-banner {
+
+.reserver-button {
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  padding: 8px;
+  margin: 4px 0;
+  width: fit-content;
+}
+
+.etoile-évaluation {
   display: flex;
   flex-direction: row;
+  justify-content: start;
 }
-.visual-ateliers img {
-  width: 240px;
+
+.commentaire {
+  padding: 16px;
+  width: fit-content;
+}
+
+.comment-carte {
+  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#commentaire-h3 {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.comment-carte1 {
+  background-color: #f2fcf4;
+  border-radius: 12px;
+  padding: 12px;
+  gap: 10px;
+}
+.comment-carte2 {
+  background-color: #f2fcf4;
+  border-radius: 12px;
+  padding: 12px;
+}
+.comment-carte3 {
+  background-color: #f2fcf4;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.id-commentaire {
+  display: flex;
+  gap: 8px;
+}
+
+.id-commentaire > p {
+  background-color: #2d5a43;
+  align-self: center;
+  padding: 12px;
+  border-radius: 5px;
+  color: #f2fcf4;
+}
+
+.call_action {
+  background-color: #14422d;
+  align-content: center;
+}
+
+.background-white {
+  background-color: #ffffff8b;
+  margin: 16px;
+  width: auto;
+  height: auto;
+  position: inherit;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.background-white img {
+  position: relative;
+  width: fit-content;
+  left: 20px;
+  bottom: -16px;
+  opacity: 0.7;
+}
+
+#action-h3 {
+  width: 126px;
   height: auto;
 }
+
+.content-action {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.button-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  padding-inline: 12px;
+  z-index: 1;
+}
+
+.content-action p {
+  height: auto;
+}
+
+@media (min-width: 767px) {
+  .filieres-cases {
+    display: flex;
+  }
+  .hero-banner {
+    display: flex;
+    flex-direction: row;
+  }
+  .visual-ateliers img {
+    width: 240px;
+    height: auto;
+  }
+  .reserve-atelier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .prix-atelier {
+    display: flex;
+  }
+  .reserver-button {
+    display: flex;
+  }
+  #action-h3 {
+    width: 100%;
+  }
+  .button-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 10px;
+  }
 }
