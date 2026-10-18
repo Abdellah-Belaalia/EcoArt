@@ -275,11 +275,11 @@ ul {
   align-items: center;
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .filieres-cases {
     display: flex;
   }
-}
+} */
 
 .Valeurs {
   display: flex;
@@ -321,4 +321,139 @@ ul {
   flex-direction: row;
   align-items: center;
   gap: 8px;
+}
+
+.Ateliers {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.atelier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.workshop-carte {
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.workshop-carte img {
+  width: 20px;
+  height: auto;
+}
+
+.visual-ateliers {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.visual-ateliers img {
+  width: auto;
+  height: auto;
+}
+
+.content-ateliers {
+  padding: 24px;
+  padding: 24px;
+  margin: 16px;
+}
+
+.content-ateliers-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-atelier {
+  display: flex;
+  justify-content: start;
+}
+
+.horaire-atelier {
+  display: flex;
+  justify-content: start;
+}
+
+.personne-atelier {
+  display: flex;
+  justify-content: start;
+}
+
+.atelier-question {
+  display: grid;
+  grid-auto-flow: row;
+  align-content: center;
+  align-items: center;
+  justify-items: start;
+  background-color: darkolivegreen;
+  padding: 8px;
+}
+
+.atelier-question img {
+  padding: 4px;
+}
+
+.atelier-reponses1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.atelier-reponses2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.atelier-reponses3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.reserve-atelier {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 767px) {
+.filieres-cases {
+  display: flex;
+}
+.hero-banner {
+  display: flex;
+  flex-direction: row;
+}
+.visual-ateliers img {
+  width: 240px;
+  height: auto;
+}
 }
