@@ -241,3 +241,37 @@
   border-radius:.5rem;
   background:var(--text-on-primary);
 }
+.feature-box h3{
+  font-size:var(--font-md);
+}
+.feature-box p{
+  font-size:var(--font-sm);
+  color:var(--paragraphe);
+}
+.feature-box a{
+  margin-left:auto;
+  font-size:var(--font-xs);
+  white-space:nowrap;
+}
+.lieu{
+  background:var(--carte-colore);
+}
+.booking-form{padding:2rem;
+  border-radius:.75rem;
+  background:var(--text-on-primary);
+  display:grid;
+  gap:1.25rem;
+}
+.form-group{
+  border:0;
+  display:grid;
+  gap:.5rem;
+  align-content:start;
+}
+.form-group>label,
+.form-group>.label,
+legend{
+  font-size:var(--font-sm);
+  font-weight:700;
+  color:var(--text-color);
+}
