@@ -212,3 +212,32 @@
 .btn:hover{
   background:var(--primary-hover);
 }
+.booking{padding-block:3rem;
+  background:var(--background-meyne);
+}
+.booking-grid{
+  display:grid;
+  grid-template-columns:1fr ;
+  gap:2rem;
+  align-items:start;
+}
+.booking-info{
+  display:grid;
+  gap:1rem;
+}
+.booking-info h2{
+  font-size:var(--font-xl);
+}
+.eyebrow{
+  font-size:var(--font-xs);
+  font-weight:700;
+  text-transform:uppercase;
+  color:var(--soustitre-botun);
+}
+.feature-box{
+  display:flex;
+  gap:.75rem;
+  padding:1rem;
+  border-radius:.5rem;
+  background:var(--text-on-primary);
+}
