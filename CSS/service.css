@@ -311,3 +311,25 @@ textarea{
     width : 100%;
     justify-content: centre;
 }
+@media (max-width:768px){
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+.form-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .submit-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .submit-btn {
+    width: auto;
+  }
