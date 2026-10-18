@@ -1,6 +1,12 @@
 *{
   display: block;
 }
+body{
+  font-family:var(--font-main);
+  padding: 0 5%;
+  background-color: var(--background-color);
+  font-size:var(--f);
+}
 .pasheader p{
   font-size: 10px;
   display: grid;
@@ -8,16 +14,399 @@
   margin-bottom: 1px;
 
 }
+.hero__text{
+  margin-top: 55px;
+}
+.headtext{ 
+  margin: 0;
+  background-color: var(--background-meyne);
+}
+.headtext p{
+  margin: 0;
+}
+
 .eyebrow{
   color: var(--soustitre-botun);
+}
+.titre{
+  padding: 0px 10px;
+}
+.headtext{
+
 }
 .impac{
   display: flex;
   padding: 30px 60px ;
   gap: 70px;
   border-radius: 10px;
-  border: 3px solid #2d5a43;
+  background-color: var(--carte-colore);
 }
-.rocherch  {
- background-color: aqua;
+span h1{
+  margin: 10px 10px;
 }
+.police{
+  font-size: var(--font-second);
+}
+#rocherch{
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+}
+.div1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.rocherch{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.catalog{
+  display: flex;
+  flex-direction: column;
+  gap:20px ;
+}
+#catalog1{
+  background-color: #fff;
+  border-radius: 15px;
+}
+.catalo1{
+  position: relative;                 
+  background-image: url('../assets/image/produit-1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius:  15px 15px 0px 0px;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 4/ 3; 
+  container-type: inline-size ;               
+}
+.catalogh1{
+  position: absolute;
+  top: 5%;
+  left:5% ;
+  font-size: clamp(10px,3cqw,18px);
+}
+.cataloghg1{
+  position: absolute;
+  background-color: #2d5a43;
+  top: 5%;
+  right: 5%;
+  padding: 1% 2%;
+  font-size: clamp(10px,3cqw,18px);
+}
+.catalogp1{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: clamp(10px,2.5cqw,18px);
+}
+#catalog2{
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.catalo2{
+  position: relative;                 
+  background-image: url('../assets/image/produit-2.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius:  15px 15px 0px 0px;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 4/ 3; 
+  container-type: inline-size ;               
+}
+.catalogh2{
+  position: absolute;
+  top: 5%;
+  left:5% ;
+  font-size: clamp(10px,3cqw,18px);
+}
+.cataloghg2{
+  position: absolute;
+  background-color: #2d5a43;
+  top: 5%;
+  right: 5%;
+  padding: 1% 2%;
+  font-size: clamp(10px,3cqw,18px);
+}
+.catalogp2{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: clamp(10px,2.5cqw,18px);
+}
+#catalog3{
+  background-color: #fff;
+  border-radius: 15px;
+}
+.catalo3{
+  position: relative;                 
+  background-image: url('../assets/image/produit-3.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius:  15px 15px 0px 0px;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 4/ 3; 
+  container-type: inline-size ;               
+}
+.catalogh3{
+  position: absolute;
+  top: 5%;
+  left:5% ;
+  font-size: clamp(10px,3cqw,18px);
+}
+.cataloghg3{
+  position: absolute;
+  background-color: #2d5a43;
+  top: 5%;
+  right: 5%;
+  padding: 1% 2%;
+  font-size: clamp(10px,3cqw,18px);
+}
+.catalogp3{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: clamp(10px,2.5cqw,18px);
+}
+#catalog4{
+  background-color: #fff;
+  border-radius: 15px;
+}
+.catalo4{
+  position: relative;                 
+  background-image: url('../assets/image/produit-4.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius:  15px 15px 0px 0px;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 4/ 3; 
+  container-type: inline-size ;               
+}
+.catalogh4{
+  position: absolute;
+  top: 5%;
+  left:5% ;
+  font-size: clamp(10px,3cqw,18px);
+}
+.cataloghg4{
+  position: absolute;
+  background-color: #2d5a43;
+  top: 5%;
+  right: 5%;
+  padding: 1% 2%;
+  font-size: clamp(10px,3cqw,18px);
+}
+.catalogp4{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: clamp(10px,2.5cqw,18px);
+}
+#catalog5{
+  background-color: #fff;
+  border-radius: 15px;
+}
+.catalo5{
+  position: relative;                 
+  background-image: url('../assets/image/produit-5.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius:  15px 15px 0px 0px;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 4/ 3; 
+  container-type: inline-size ;               
+}
+.catalogh5{
+  position: absolute;
+  top: 5%;
+  left:5% ;
+  font-size: clamp(10px,3cqw,18px);
+}
+.cataloghg5{
+  position: absolute;
+  background-color: #2d5a43;
+  top: 5%;
+  right: 5%;
+  padding: 1% 2%;
+  font-size: clamp(10px,3cqw,18px);
+}
+.catalogp5{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: clamp(10px,2.5cqw,18px);
+}
+#catalog6{
+  background-color: #fff;
+  border-radius: 15px;
+}
+.catalo6{
+  position: relative;                 
+  background-image: url('../assets/image/produit-6.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius:  15px 15px 0px 0px;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 4/ 3; 
+  container-type: inline-size ;               
+}
+.catalogh6{
+  position: absolute;
+  top: 5%;
+  left:5% ;
+  font-size: clamp(10px,3cqw,18px);
+}
+.cataloghg6{
+  position: absolute;
+  background-color: #2d5a43;
+  top: 5%;
+  right: 5%;
+  padding: 1% 2%;
+  font-size: clamp(10px,3cqw,18px);
+}
+.catalogp6{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: clamp(10px,2.5cqw,18px);
+}
+#catalog7{
+  background-color: #fff;
+  border-radius: 15px;
+}
+.catalo7{
+  position: relative;                 
+  background-image: url('../assets/image/produit-7.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius:  15px 15px 0px 0px;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 4/ 3; 
+  container-type: inline-size ;               
+}
+.catalogh7{
+  position: absolute;
+  top: 5%;
+  left:5% ;
+  font-size: clamp(10px,3cqw,18px);
+}
+.cataloghg7{
+  position: absolute;
+  background-color: #2d5a43;
+  top: 5%;
+  right: 5%;
+  padding: 1% 2%;
+  font-size: clamp(10px,3cqw,18px);
+}
+.catalogp7{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: clamp(10px,2.5cqw,18px);
+}
+#catalog8{
+  background-color: #fff;
+  border-radius: 15px;
+}
+.catalo8{
+  position: relative;                 
+  background-image: url('../assets/image/produit-8.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius:  15px 15px 0px 0px;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 4/ 3; 
+  container-type: inline-size ;               
+}
+.catalogh8{
+  position: absolute;
+  top: 5%;
+  left:5% ;
+  font-size: clamp(10px,3cqw,18px);
+}
+.cataloghg8{
+  position: absolute;
+  background-color: #2d5a43;
+  top: 5%;
+  right: 5%;
+  padding: 1% 2%;
+  font-size: clamp(10px,3cqw,18px);
+}
+.catalogp8{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: clamp(10px,2.5cqw,18px);
+}
+
+  
+
+/*
+.catalo8{
+  position: relative;                 
+  background-image: url('../assets/image/produit-8.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 100%;
+  aspect-ratio: 4/ 3;                
+}
+.catalogh8{
+  position: absolute;
+  bottom: 20px;
+  top: 20px;
+  right: 440px;
+}
+.cataloghg8{
+  position: absolute;
+  background-color: #2d5a43;
+  bottom: 10px;
+  height: 20px;
+  width: 90px;
+  background-color: #2d5a43;
+  top: 20px;
+  right: 20px;
+}
+.catalogp8{
+  position: absolute;
+  bottom: 0px;
+  top: 456px;
+  right: 450px;
+}
+/* .titre {
+  position: absolute;
+  bottom: 20px;                        
+  left: 20px;
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);   
+}
+
+.prix {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 0;
+}*/

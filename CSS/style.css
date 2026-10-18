@@ -3,10 +3,14 @@
   margin: 0;
   padding: 0;
 }
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: var(--font-main);
+}
+
+main {
+  max-width: 440px;
 }
 
 html {
@@ -22,8 +26,8 @@ html {
 }
 
 h1 {
-color: var(--link-color);
-font-size: var(--font-size-stat);
+  color: var(--link-color);
+  font-size: var(--font-size-stat);
 }
 
 #logo {
@@ -36,6 +40,7 @@ font-size: var(--font-size-stat);
   gap: 25px;
   border: black solid 2px;
   width: fit-content;
+  max-width: 440px;
 }
 .hero-banner {
   position: relative;
@@ -153,7 +158,6 @@ ul {
 }
 
 .filieres .filieres-cases {
-
   gap: 16px;
   margin-top: 24px;
 }
@@ -257,9 +261,52 @@ ul {
   align-items: center;
 }
 
-
-@media (min-width:1200px){
-  .filieres-cases{
+@media (min-width: 1200px) {
+  .filieres-cases {
     display: flex;
   }
 }
+
+.Valeurs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 32px 16px;
+  background-color: red;
+}
+
+.valeurs-contenu {
+  align-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.en-tete-valeurs {
+  text-align: center;
+  padding: 16px;
+}
+
+.carte-valeurs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+  background-color: blue;
+}
+
+.valeurs-carte-contenu {
+  border-radius: 12px;
+  padding: 12px;
+  background-color: green;
+}
+
+.pied-carte-valeurs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+
