@@ -49,7 +49,7 @@ h1 {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  /* max-width: 767px; */
+  max-width: 100%;
 }
 
 .hero-content {
@@ -183,12 +183,33 @@ ul {
   border-radius: 12px;
 }
 
+.visual-hero {
+  position: relative;
+
+}
+
+.visual-hero-content {
+  position: absolute;
+  bottom: 10px;
+}
+
 .contenu-carte {
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   flex-grow: 1;
+}
+
+.carte-badge {
+  display: flex;
+  width: fit-content;
+  height: auto;
+}
+
+.carte-badge img {
+  width: 12px;
+  height: auto;
 }
 
 .titre-carte {
@@ -326,7 +347,7 @@ ul {
 .Ateliers {
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: red;
@@ -334,7 +355,7 @@ ul {
 
 .atelier {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: red;
@@ -363,8 +384,8 @@ ul {
 }
 
 .visual-ateliers img {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .content-ateliers {
