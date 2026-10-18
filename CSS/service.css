@@ -80,7 +80,7 @@
   font-size:var(--font-xs);color:var(--text-muted)
 }
 
-/* Sessions */
+
 .sessions{
   padding-block:3rem
 }
@@ -296,4 +296,18 @@ textarea{width:100%;
 }
 textarea{
   resize:vertical;
+}
+.wrap{
+    padding-inline: 1rem;
+}
+.booking-form{
+    padding: 1.25rem;
+}
+.submit-section{
+    flex-direction: column;
+    align-items: stretch;
+}
+.submit-btn{
+    width : 100%;
+    justify-content: centre;
 }
