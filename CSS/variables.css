@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root{  
   
   /*le colore */
   --titre-icon: #14422D;
   --primary-medium: #2d5a43;
-  --primary-hover: #2d5a43;
+  --primary-over: #2d5a43;
   --carte-colore: #ECF6EE;
   --paragraphe: #414943; 
   --soustitre-botun: #944931;
@@ -19,7 +20,7 @@
   
   
   /* les colore de teste */
-  --text-color: #151d19;         
+  --text-color: #151d19;  
   --text-muted: #6a726c;           
   --text-on-primary: #ffffff;       
   --link-color: #14422d;
@@ -40,6 +41,6 @@
 
 
   /*la police de text */
-  --font-main :"space Grotesk", sans-serif;
+  --font-main :"Space Grotesk", sans-serif;
   --font-second :" Atkinson Hyperlegible Next",arial;
 }
