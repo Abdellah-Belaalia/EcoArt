@@ -1,7 +1,7 @@
 
 main{
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     gap: 16px;
     background-color: var(--background-color);
     padding-left: 8px;
@@ -18,7 +18,9 @@ p{
     font-family: var(--font-main);
     color: var(--titre-icon);
 }
-
+.ContextIndicator h3{
+    font-size: 10px;
+}
 h2{
     font-size: 28px;
 }
@@ -38,7 +40,9 @@ img .icons{
     border-radius: 12px;
     margin-right: auto;  
 }
-
+h2{
+    color: #14422D;
+}
 .ContextIndicator {
     display: flex;
     flex-direction: column;
@@ -49,6 +53,10 @@ img .icons{
     color: #944931;
     background-color: var(--background-color);
     border-radius: 12px;
+    
+}
+.matric h2{
+    color: #000;
 }
 .matricUp .para2{
     background-color: var(--background-color);
@@ -59,12 +67,22 @@ img .icons{
     font-size: var(--font-2xl);
     margin: 0px 0px 0px 0px;
     font-family: var(--font-main);
+    font-size: 2.5rem;
 }
 .matricDown .para1{
     
     font-size: var(--font-2xl);
     margin: 0px 0px 0px 0px;
-    font-family: sans-serif ;
+    font-size: 2.5rem;
+    color: var(--titre-icon);
+}
+.co2{
+    font-size: 1rem;
+    color: #14422D;
+}
+.kg{
+    font-size: 1rem;
+    color: var(--soustitre-botun);
 }
 .ContextIndicator h1{
     font-size: var(--font-2xl);
@@ -80,20 +98,20 @@ img .icons{
     background-color: #E1EBE3;
     flex-direction: row;
     border-radius: 16px;
-    
+    width: 190px;
     gap: 8px;
     margin-right: auto;
     margin-bottom: 8px;
-
+    
 }
 .miseJour p{
     font-size: var(--font-xs);
-    padding-top: 8px;
+    
 }
 
 .icons{
     height: auto;
-    width: 20px;
+    width: 15px;
 }
 
 .scoreboard{
@@ -121,6 +139,8 @@ img .icons{
 }
 .leftColumn{
     background-color: var(--surface-soft);
+    border-radius: 12px;
+    padding: 8px;
 }
 .typologie_up{
     display: flex;
@@ -215,6 +235,7 @@ a{
 }
 div .norme p{
     color: #fff;
+    font-size: var(--font-sm);
 }
 .audit{
     display: flex;
@@ -227,6 +248,8 @@ div .norme p{
     justify-content: space-between;
 }
 .norme{
+    display: flex;
+    flex-direction: column;
     border-top: solid #fff 1px;
 }
 .normeIcon{
@@ -244,6 +267,7 @@ div .norme p{
 .matiere p,h2{
     margin-bottom: 1px;
     margin-top: 1px;
+    font-size: var(--font-md);
     
 }
  #matiere_p1{
@@ -280,7 +304,12 @@ div .norme p{
     width: 100%;
     height: auto;
 }
+.partInfo{
+    background-color: var(--background-meyne);
+    padding: 16px;
+}
 /* iputs*/
+.lesInput
 .input_Titre_Icon{
     display: flex;
     gap: 8px;
@@ -328,7 +357,7 @@ select{
 .lesInput{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
 }
 textarea{
     width: 95%;
@@ -347,7 +376,7 @@ textarea{
 }
 
 button{
-    width: 50%;
+    width: 100%;
     height: 48px;
     background-color: var(--soustitre-botun);
     border-radius: 8px;
@@ -370,6 +399,7 @@ button{
     width: 100%;
     height: 160px;
 }
+
 .quetion-1 option{
     width: 100%;
 }
@@ -383,6 +413,9 @@ button{
     border-radius: 12px;
     height: 150px;
     padding: 8px;
+    position: relative;
+    
+
 }
 .mapIcon_bg a{
     color: var(--soustitre-botun);
@@ -401,9 +434,53 @@ a img{
     background-color: var(--background-color);
     border: none;
 }
-h1{
-    font-size: 3.5rem;
+#lastP{
+    margin: -9px 0px 4px;
+    font-size: var(--font-sm);
 }
+/* -------------------------------------------*/
+.header-1 {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: var(--colore-fond);
+    padding: 15px 40px;
+}
+.charter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.charter-header h2 {
+    font-size: var(--font-size-xs);
+    color: var(--titre-icon);
+    letter-spacing: 1px;
+}
+.artisan-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.map-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.header-1 img {
+    height: 80px; 
+    width: auto;  
+    object-fit: contain; 
+}
+
 @media (min-width: 768px){
 
     main{
@@ -411,8 +488,6 @@ h1{
         flex-direction: column;
         gap: 24px;
         margin: 0px 8px 0px 8px;
-        
-        
     }
     h2{
        font-size: var(--font-size-xs);
@@ -462,10 +537,14 @@ h1{
     flex-direction: column;
     gap: 8px;
    }
+   .partInfo{
+    padding: 40px;
+   }
    .input_1{
     display: flex;
     flex-direction: row;
    }
+   
    .input_nom{
     width: 100%;
    }
@@ -490,8 +569,13 @@ h1{
     
    }
    .mapIcon_bg{
-    margin-top: 8px;
-    height: 125px;
+    bottom: 160px;
+    left: 16px;
+    height: 130px;
+    width: 300px;
+   }
+   .cartMap{
+    margin-bottom: -160px;
    }
    .final p{
     font-size: var(--font-sm);
@@ -502,10 +586,93 @@ h1{
     font-size: var(--font-lg);
     margin-bottom: 8px;
    }
-  
-
-
-
-
-  
+   @media (min-width : 1024px){
+    .ContextIndicator{
+        margin-right: 12px;
+    }
+    .first{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    .ContextIndicator h1{
+        font-size: 49px;
+        margin-bottom: 1px;
+    }
+    .ContextIndicator p{
+        padding-right: 50px;
+    }
+    .miseJour{
+        height: 50px;
+        position: relative;
+        top: 140px;
+    }
+    .miseJour p{
+        font-size: 11px;
+    }
+    .scoreboard{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0fr;
+        gap: 16px;
+    }
+    .methodology{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    .normeIcon{
+        margin: -14px;
+        font-size: var(--font-sm);
+        padding-left: 16px;
+        
+    }
+    .photo{
+        width: 15px;
+    }
+    .certification{
+        display: flex;
+        flex-direction: column;
+        gap: 109px;
+        margin-top: -16px;
+    }
+    .norme{
+        padding-top: 16px;
+    }
+    .informations{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .lesInput{
+        padding: 16px;
+        margin-left: -40px;
+        padding-top: 100px;
+    }
+    .partInfo{
+        margin-right: 60px;
+        padding: 28px;
+    }
+    p{
+        font-size: var(--font-sm);
+    }
+   .checkIcon p{
+    font-size: 11px;
+   }
+   .checkBotton{
+    gap:24px;
+   }
+   .bg_1{
+    width: 200px;
+   }
+   .bg_2{
+    width: 120px;
+   }
+   .bg_3{
+    width: 100px;
+   }
+   .bg_4{
+    width: 80px;
+   }
+}
    }
