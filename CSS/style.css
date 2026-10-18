@@ -432,28 +432,47 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  gap: 16px;
+  padding: 16px 0;
 }
 
+.prix-atelier {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
 
-
-
-
-
-
-
-
+.reserver-button {
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  padding: 8px;
+  margin: 4px 0;
+  width: fit-content;
+}
 
 @media (min-width: 767px) {
-.filieres-cases {
-  display: flex;
-}
-.hero-banner {
-  display: flex;
-  flex-direction: row;
-}
-.visual-ateliers img {
-  width: 240px;
-  height: auto;
-}
+  .filieres-cases {
+    display: flex;
+  }
+  .hero-banner {
+    display: flex;
+    flex-direction: row;
+  }
+  .visual-ateliers img {
+    width: 240px;
+    height: auto;
+  }
+  .reserve-atelier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .prix-atelier {
+    display: flex;
+  }
+  .reserver-button {
+    display: flex;
+  }
 }
