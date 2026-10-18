@@ -355,7 +355,7 @@ ul {
 
 .atelier {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: red;
@@ -471,6 +471,21 @@ ul {
   margin: 4px 0;
   width: fit-content;
 }
+
+
+
+
+
+
+
+
+.etoile-évaluation {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+
 
 @media (min-width: 767px) {
   .filieres-cases {
