@@ -346,3 +346,9 @@ textarea{
     padding: 2rem;
   }
   }
+@media (min-width: 1280px) {
+  .wrap {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+}
