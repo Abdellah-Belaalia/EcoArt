@@ -8,7 +8,7 @@
   --carte-colore: #ECF6EE;
   --paragraphe: #414943; 
   --soustitre-botun: #944931;
-  --colore-fond: #F2FCF4;
+  --colore-fond: #F2FCF4; 
 
     
   /* Packground et les pordare */
@@ -32,14 +32,17 @@
 
 
   /* la tai de texte */
-  --font-size-xs: 0.75rem;         
-  --font-size-sm: 0.875rem;        
-  --font-size-base: 1rem;          
-  --font-size-md: 1.125rem;      
-  --font-size-lg: 1.25rem;        
-  --font-size-xl: 2rem;            
-  --font-size-2xl: 3rem;           
-  --font-size-stat: 3.5rem;
+  --font-xs: 0.75rem;         
+  --font-sm: 0.875rem;        
+  --font-base: 1rem;          
+  --font-md: 1.125rem;      
+  --font-lg: 1.25rem;        
+  --font-xl: 2rem;            
+  --font-2xl: 3rem;           
+  --font-3xl: 3.5rem;
+  /* --font-size-4xl: 3.5rem;
+  --font-size-5xl: 3.5rem;
+  --font-size-6xl: 3.5rem; */
 
 
   /*la police de text */
