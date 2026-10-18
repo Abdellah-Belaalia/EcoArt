@@ -50,22 +50,52 @@ h1{
 }
 .container{
     display: flex;
-    flex-direction: row;
+    
 }
 .section{
     background-color:  #F2FCF4;
 }
 .tempt{
     display: flex;
+    font-size: 16px;
+    white-space: nowrap;
+    gap: 5px;
+    align-items: center;
 }
 .dabat{
     display: flex;
+    font-size: 16px;
+    white-space: nowrap;
+    gap: 5px;
+    align-items: center;
     
 }
 .max-person{
     display: flex;
+    font-size: 16px;
+    white-space: nowrap;
+    gap: 5px;
+    align-items: center;
+    
 }
 .classement{
     display: flex;
     gap : 50px;
+}
+#p2{
+    font-size: 12px;
+}
+.articles{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    gap: 24px;
+}
+@media (max-width: 700px) {
+  .cartes {
+    grid-template-columns: 1fr;
+  }
+  .sessions-entete {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
