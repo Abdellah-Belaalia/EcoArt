@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoArt - Nos Artisans</title>
+    
+    <link rel="icon" type="image/png" href="assets/icons/logo.png">
     <link rel="stylesheet" href="CSS/variables.css">
     <link rel="stylesheet" href="CSS/artisans.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header-1">
-        <img src="assets/icons/logo.png" alt="Logo EcoArt" height="40">
+        <div class="brand-logo">
+            <img src="assets/icons/logo.png" alt="Logo EcoArt">
+        </div>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger">☰</label>    
+        
         <nav class="places">
             <ul class="menu">
                 <li><a href="index.html">Accueil</a></li>
@@ -28,7 +33,7 @@
         <section class="hero-section">
             <div class="hero-content">
                 <h1>Les Mains derrière les Matières</h1>
-                <p>Découvrez les éco-artisans du réseau EcoArt. À la croisée de l'héritage d'atelier et de la stricte valorisation des rebuts industriels, chaque geste redéfinit l'usage sans puiser de nouvelle ressource géologique ou forestière.</p>
+                <p>Découvrez les éco-artisans du réseau EcoArt. À la croisée de l'héritage d'atelier et de la stricte valorisation des rebuts industriels...</p>
                 <nav class="filters">
                     <button class="filter-btn active">Tous les Ateliers (24)</button>
                     <button class="filter-btn">Bois de Réemploi</button>
@@ -43,9 +48,8 @@
                     <h2>CHARTE D'EXIGENCE 2025</h2>
                     <span class="audit-badge">100% Audité</span>
                 </header>
-                <p class="charter-desc">Nos artisans souscrivent à un cahier des charges rigoureux : zéro résine toxique, traçabilité des gisements à moins de 250 km, et recyclabilité complète en fin de cycle de vie.</p>
-                
-                <div class="stats-grid">
+                <p class="charter-desc">Nos artisans souscrivent à un cahier des charges rigoureux...</p>
+                <div class="stats-grid-small">
                     <article class="stat-item">
                         <p class="stat-number">84%</p>
                         <h3>Rebuts valorisés/création</h3>
@@ -59,7 +63,6 @@
         </section>
 
         <section class="artisans-grid">
-            <!-- CARTE 1 : Antoine Mercier -->
             <article class="artisan-card">
                 <div class="artisan-header">
                     <img src="assets/image/artisans-1.svg" alt="Antoine Mercier" class="artisan-avatar">
