@@ -9,9 +9,9 @@ body {
   font-family: var(--font-main);
 }
 
-main {
+/* main {
   max-width: 440px;
-}
+} */
 
 html {
   width: 100%;
@@ -40,7 +40,7 @@ h1 {
   gap: 25px;
   border: black solid 2px;
   width: fit-content;
-  max-width: 440px;
+  /* max-width: 440px; */
 }
 .hero-banner {
   position: relative;
@@ -49,7 +49,7 @@ h1 {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  max-width: 767px;
+  max-width: 100%;
 }
 
 .hero-content {
@@ -59,7 +59,17 @@ h1 {
 .hero-section-button {
   display: flex;
   justify-content: space-around;
+  padding: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.hero-section-button button {
+  width: 160px;
+  height: 32px;
+}
+
 .image {
   width: 100%;
 }
@@ -118,7 +128,7 @@ ul {
 }
 
 .menu {
-  display: flex;
+  width: 100%;
   gap: 32px;
 }
 
@@ -145,7 +155,11 @@ ul {
 
 .filieres {
   background-color: red;
+  position: relative;
+  width: fit-content;
   padding: 32px;
+  padding: 20px;
+  gap: 25px;
 }
 
 .filieres .en-tete {
@@ -173,12 +187,32 @@ ul {
   border-radius: 12px;
 }
 
+.visual-hero {
+  position: relative;
+}
+
+.visual-hero-content {
+  position: absolute;
+  bottom: 10px;
+}
+
 .contenu-carte {
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   flex-grow: 1;
+}
+
+.carte-badge {
+  display: flex;
+  width: fit-content;
+  height: auto;
+}
+
+.carte-badge img {
+  width: 12px;
+  height: auto;
 }
 
 .titre-carte {
@@ -265,11 +299,11 @@ ul {
   align-items: center;
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .filieres-cases {
     display: flex;
   }
-}
+} */
 
 .Valeurs {
   display: flex;
@@ -379,4 +413,269 @@ ul {
   background:var(--surface-foncée);
 }
 
+.Ateliers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
 
+.atelier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.workshop-carte {
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.workshop-carte img {
+  width: 20px;
+  height: auto;
+}
+
+.visual-ateliers {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.visual-ateliers img {
+  width: 100%;
+  height: 100%;
+}
+
+.content-ateliers {
+  padding: 24px;
+  padding: 24px;
+  margin: 16px;
+}
+
+.content-ateliers-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-atelier {
+  display: flex;
+  justify-content: start;
+}
+
+.horaire-atelier {
+  display: flex;
+  justify-content: start;
+}
+
+.personne-atelier {
+  display: flex;
+  justify-content: start;
+}
+
+.atelier-question {
+  display: grid;
+  grid-auto-flow: row;
+  align-content: center;
+  align-items: center;
+  justify-items: start;
+  background-color: darkolivegreen;
+  padding: 8px;
+}
+
+.atelier-question img {
+  padding: 4px;
+}
+
+.atelier-reponses1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.atelier-reponses2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.atelier-reponses3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.reserve-atelier {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.prix-atelier {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.reserver-button {
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  padding: 8px;
+  margin: 4px 0;
+  width: fit-content;
+}
+
+.etoile-évaluation {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.commentaire {
+  padding: 16px;
+  width: fit-content;
+}
+
+.comment-carte {
+  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#commentaire-h3 {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.comment-carte1 {
+  background-color: #f2fcf4;
+  border-radius: 12px;
+  padding: 12px;
+  gap: 10px;
+}
+.comment-carte2 {
+  background-color: #f2fcf4;
+  border-radius: 12px;
+  padding: 12px;
+}
+.comment-carte3 {
+  background-color: #f2fcf4;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.id-commentaire {
+  display: flex;
+  gap: 8px;
+}
+
+.id-commentaire > p {
+  background-color: #2d5a43;
+  align-self: center;
+  padding: 12px;
+  border-radius: 5px;
+  color: #f2fcf4;
+}
+
+.call_action {
+  background-color: #14422d;
+  align-content: center;
+}
+
+.background-white {
+  background-color: #ffffff8b;
+  margin: 16px;
+  width: auto;
+  height: auto;
+  position: inherit;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.background-white img {
+  position: relative;
+  width: fit-content;
+  left: 20px;
+  bottom: -16px;
+  opacity: 0.7;
+}
+
+#action-h3 {
+  width: 126px;
+  height: auto;
+}
+
+.content-action {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.button-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  padding-inline: 12px;
+  z-index: 1;
+}
+
+.content-action p {
+  height: auto;
+}
+
+@media (min-width: 767px) {
+  .filieres-cases {
+    display: flex;
+  }
+  .hero-banner {
+    display: flex;
+    flex-direction: row;
+  }
+  .visual-ateliers img {
+    width: 240px;
+    height: auto;
+  }
+  .reserve-atelier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .prix-atelier {
+    display: flex;
+  }
+  .reserver-button {
+    display: flex;
+  }
+  #action-h3 {
+    width: 100%;
+  }
+  .button-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 10px;
+  }
+}
