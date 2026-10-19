@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/impact.css">
     <link rel="stylesheet" href="CSS/variables.css">
+    <!-- <link rel="stylesheet" href="CSS/artisans.css"> -->
     <title>impact&contact</title>
 
       <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,20 @@
     
 </head>
 <body>
-    <main>
+<main>
+    <header class="header-1">
+        <a href="index.html"><img src="assets/icons/logo.png" alt="Logo EcoArt" height="40" ></a>
+        <nav class="places">
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Catalogue</a></li>
+                <li><a href="service.html">Ateliers & Services</a></li>
+                <li><a href="artisans.html" >Nos Artisans</a></li>
+                <li><a href="impact.html" class="btn-actif">Impact & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <section class="first">
     <div class="ContextIndicator">
         <div class="statiIcon">
@@ -33,13 +47,14 @@
     </section>
 
     <section class="scoreboard">
+       
         <div class="matric">
             <div class="matricUp">
                 <img src="assets/icons/contact-icons/Icon (1).svg" alt="" class="icons">
                 <p class="para2"><b>+34% vs 2024</b></p>
             </div>
             <div class="matricDown">
-                 <p class="para1"> <b>18450 kg</b></p>
+                 <p class="para1"> <b>18450 <span class="kg">kg</span></b></p>
                 <h2>Rebuts nobles valorisés</h2>
                 <p>Chutes d'ateliers, bois de charpente etrebuts industriels recyclés.</p>
             </div>
@@ -51,7 +66,7 @@
                 <p class="para2"><b>Évitement direct</b></p>
             </div>
                 <div class="matricDown1">
-                <p class="para1"><b>32,8t co2e</b></p>
+                <p class="para1"><b>32,8t <span class="co2">t CO₂e</span></b></p>
                 <h2>Émissions évitées</h2>
                 <p>Comparé à la production industrielle d'équivalents neufs non-circulaires.</p>
             </div>
@@ -62,7 +77,7 @@
                 <p class="para2"><b>Filière sèche</b></p>
             </div>
                 <div class="matricDown">
-                <p class="para1"><b>142000 L</b></p>
+                <p class="para1"><b>142000 <span class="kg">L</span></b></p>
                 <h2>eau portable préservée</h2>
                 <p>Procédés de décapage et teinture végétale à circuit fermé</p>
             </div>
@@ -73,7 +88,7 @@
                 <p class="para2"><b>Social & Inclusion</b></p>
             </div>
             <div class="matricDown1">
-                <p class="para1"><b>820 hrs</b></p>
+                <p class="para1"><b>820 <span class="co2">hrs</span></b></p>
                 <h2>Transmission & Ateliers</h2>
                 <p>Apprentissage de la réparation, du surcylage et insertion locale</p>
             </div>
@@ -153,11 +168,11 @@
                 </div>
                 <div class="norme">
                     <div class="normeIcon">
-                        <img src="assets/icons/service-icons/Icon (15).svg" alt="" class="icons">
+                        <img src="assets/icons/service-icons/Icon (15).svg" alt="" class="icons photo">
                         <p>Norme ISO pour le bilan matière</p>
                     </div>
                     <div  class="normeIcon">
-                        <img src="assets/icons/service-icons/Icon (15).svg" alt="" class="icons">
+                        <img src="assets/icons/service-icons/Icon (15).svg" alt="" class="icons photo">
                         <p>Certification Ateliers d'Art de Frence</p>
                     </div>
                     <div  class="normeIcon">
@@ -280,7 +295,7 @@
                     <button type="submit">Envoyer mon message éco-responsable <img src="assets/icons/contact-icons/Icon (13).svg" alt="" class="icons"></button>  
                     <div class="checkIcon">
                         <img src="assets/icons/contact-icons/Icon (14).svg" alt="" class="icons">
-                        <h3>Réponse artisanale sous 24h ouvrées</h3>
+                        <p><b>Réponse artisanale sous 24h ouvrées</b></p>
                     </div>
                 </div>
             </div>
@@ -295,7 +310,7 @@
                     <img src="assets/icons/contact-icons/Icon88.svg" alt="" class="icons">
                     <h3>Réseau des 14 Ateliers Partenaires</h3>
                 </div>
-                <p>En plus du tiers-lieu parisien, nos ateliers de forge, verrerie soaire et tissage se déploient en Nouvelle-Aquitaine, Auvergne-Rhone-Alpes et Bretagne .</p>
+                <p id="lastP">En plus du tiers-lieu parisien, nos ateliers de forge, verrerie soaire et tissage se déploient en Nouvelle-Aquitaine, Auvergne-Rhone-Alpes et Bretagne .</p>
                 <a href="#">Découvrir la carte complète des artisans ></a> 
             </div> 
             
@@ -317,7 +332,64 @@
     <section>
 
     </section>
+      <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-col brand">
+                <div class="brand-logo">
+                    <img src="assets\icons\logo.png" alt="Logo" width="24">
+                </div>
+                <p>Plateforme d'artisanat circulaire valorisant les rebuts nobles. Conception numérique sobre, traçabilité certifiée et réduction de l'empreinte carbone matériel.</p>
+                <div class="eco-badge">
+                    <img src="assets/icons/artisans-icons/Icon (1).svg" alt="Check" width="14"> Index Éco-Index : A
+                </div>
+            </div>
+            
+            <div class="footer-col links">
+                <h3>Filière Circulaire</h3>
+                <ul>
+                    <li><a href="#">Bois de réemploi & chêne sauvé</a></li>
+                    <li><a href="#">Verre recyclé au four solaire</a></li>
+                    <li><a href="#">Textiles surcyclés d'ateliers</a></li>
+                    <li><a href="#">Métaux ferreux reconditionnés</a></li>
+                    <li><a href="#">Charte zéro déchet d'atelier</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col certifications">
+                <h3>Labels & Certifications</h3>
+                <div class="cert-card">
+                    <strong>Label Upcycling Certifié UE</strong>
+                    <p>Norme traçabilité matière brute à 100%</p>
+                </div>
+                <div class="cert-card">
+                    <strong>Garantie Artisans d'Art</strong>
+                    <p>Transmission et fabrication locale</p>
+                </div>
+            </div>
+            
+            <div class="footer-col newsletter">
+                <h3>Newsletter Sobre</h3>
+                <p class="news-desc">Une seule édition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
+                <form action="#" method="POST" class="news-form">
+                    <input type="email" placeholder="votre.email@domaine.fr" required>
+                    <button type="submit">S'inscrire</button>
+                </form>
+                <p class="privacy-note">Désinscription en 1 clic. Données hébergées en France.</p>
+            </div>
+        </div>
 
-    </main>
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2025 EcoArt (NextLine client). Tous droits réservés. Hébergement vert basse consommation Tél : +33 (0)1 89 45 20 10
+            </div>
+            <div class="legal-links">
+                <a href="#">Mentions Légales</a>
+                <a href="#">Accessibilité : Conforme RGAA</a>
+                <a href="#">Charte Éco-conception</a>
+            </div>
+        </div>
+    </footer>
+</main>
+  
 </body>
 </html>
