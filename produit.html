@@ -1,263 +1,376 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <title></title>
-    <link rel="stylesheet" href="CSS/variables.css" />
-    <link rel="stylesheet" href="CSS/styleproduit.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <main>
-      <header class="en-tete">
-        <div class="conteneur en-tete-contenu">
-          <a href="index.html" class="logo">
-            <img src="assets/icons/logo.png" alt="logo" id="logo"
-          /></a>
-
-          <nav aria-label="Navigation principale">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="CSS/variables.css">
+    <link rel="stylesheet" href="CSS/styleproduit.css">
+</head>
+<body>
+      <header class="header-1">
+        <a href="index.html"><img src="assets/icons/logo.png" alt="Logo EcoArt" height="40" ></a>
+        <nav class="places">
             <ul class="menu">
-              <li><a href="index.html" class="lien-actif">Accueil</a></li>
-              <li><a href="produit.html">Catalogue Produits - EcoArt</a></li>
-              <li><a href="artisans.html">Nos Artisans - EcoArt</a></li>
-              <li><a href="service.html">Ateliers & Services - EcoArt</a></li>
-              <li><a href="impact.html">Impact & Contact - EcoArt</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html" class="btn-actif">Catalogue</a></li>
+                <li><a href="service.html">Ateliers & Services</a></li>
+                <li><a href="artisans.html" >Nos Artisans</a></li>
+                <li><a href="impact.html" >Impact & Contact</a></li>
             </ul>
-          </nav>
+        </nav>
+    </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="headtext">
+          <div class="hed">
+            <div class="phed"> 
+              <span class="phead"><img class="sez" src="assets/icons/produit-icons/Icon-1.svg" alt=""><span class="color"> TRAÇABILITÉ MATIÈRE 100% VÉRIFIÉE </span> </span>
+              <span class="phead"> <span class="point"> • </span><span class="colore"> Chaque objet détourne des déchets nobles des filières d'enfouissement. </span></span>
+            </div>
+            <div class="phed">
+              <span class="phead"><img class="sez" src="assets/icons/produit-icons/Icon-2.svg" alt=""> Livraison ferroviaire & routière compensée </span>
+              <span class="phead"> <span class="point">|</span><span class="color"> Emballages 100% amidon de maïs compostable .</span></span>
+            </div>
+          </div>
         </div>
-      </header>
-      <section class="hero">
-        <div class="container">
-          <div class="headtext">
-            <span>
-              <p>TRAÇABILITÉ MATIÈRE 100% VÉRIFIÉE</p>
-              <p>
-                Chaque objet détourne des déchets nobles des filières
-                d'enfouissement.
-              </p>
-            </span>
-            <span>
-              <p>Livraison ferroviaire & routière compensée</p>
-              <p>Emballages 100% amidon de maïs compostable</p>
-            </span>
-          </div>
-
-          <div class="hero__text">
-            <p class="eyebrow">Filière d'éco-conception française</p>
-            <h1 class="titre">Catalogue d'objets upcyclés pièces uniques</h1>
-            <p class="hero_desc">
-              Des rebuts nobles réinventés en art de vivre durable. Chaque pièce
-              est manufacturée à la main en série très limitée, traçable
-              jusqu'au gisement source.
-            </p>
-          </div>
-
-          <aside class="impac">
-            <aside class="">
-              <span>MATIÈRE DÉTOURNÉE</span><span><h1>14.8</h1></span
-              ><small>t</small><span>Depuis janvier 2025</span>
-            </aside>
-
-            <aside class="">
-              <span>ÉMISSIONS ÉVITÉES</span><span><h1>-32.4</h1></span
-              ><small>t</small><span>Équivalent CO₂ eq</span>
-            </aside>
+        <div class="hero-dev">
+        <div class="hero__text">
+          <p class="eyebrow"><img src="assets/icons/produit-icons/Background.svg" alt=""> Filière d'éco-conception française</p>
+          <h1 class="titre">Catalogue d'objets upcyclés  pièces uniques</h1>
+          <p class="hero_desc">
+            Des rebuts nobles réinventés en art de vivre durable. Chaque pièce est manufacturée à la main en série très limitée, traçable jusqu'au gisement source.
+          </p>
+        </div>
+      
+        <aside class="impac">
+          <ASide class="spane">
+            <span class="colors">MATIÈRE DÉTOURNÉE</span>
+            <div class="t"><h1>14.8 </h1><small>t</small></div>
+            <span class="colora">Depuis janvier 2025</span>
+          </ASide>
+          <div class="border"> </div>
+          <aside class="spane">
+            <span class="colors">ÉMISSIONS ÉVITÉES</span>
+            <div class="t tt"><h1>-32.4 </h1><small>t</small></div>
+            <span class="colora">Équivalent CO₂ eq</span>
           </aside>
-          <div class="rocherch">
-            <input
-              type="text"
-              id="rocherch"
-              placeholder="Rechercher bois, carafe, chêne, lin..."
-            />
-            <div class="div1">
-              <span>ESPACES:</span><span>Tous</span><span>Salon</span
-              ><span>Art de la table</span><span>ELuminaire</span>
-              <span>Décoration</span><span>Mobilier</span>
+          </div>
+        </aside>
+        <div class="Rocherch">
+          <div class="recherch1">
+          <div class="div0">
+          <input type="text" class="rocherch " placeholder=" Rechercher bois, carafe, chêne, lin...">
+          </div>
+          <div class="div1">
+            <span class="colo">ESPACES :</span><span class="tous">Tous</span><span class="salon">Salon</span><span class="salon">Art de la table</span ><span class="salon">ELuminaire</span>
+            <span class="salon">Décoration</span><span class="salon">Mobilier</span>
+          </div>
+          <div class="div2">
+            <span class="colo">TRIER : </span>
+            <select name="" id=" ">  
+              <option value=""><span class="option">Nouveautés d'atelier</span></option>
+            </select>
+          </div>
+          </div>
+          <div class="matiare">
+            <div> MATIÈRE REVALORISÉE : </div>
+            <div class="div3">
+              <span class="infini"><img src="assets/icons/produit-icons/Icon.svg" alt="">Toutes les matières </span><span><img src="assets/icons/produit-icons/Icon (1).svg" alt=""> Bois revalorisé </span> <span> <img src="assets/icons/produit-icons/Icon (2).svg" alt=""> Tissus & Textiles </span><span> <img src="assets/icons/produit-icons/Icon (3).svg" alt=""> Verre surcyclé </span><span> <img src="assets/icons/produit-icons/Icon (4).svg" alt=""> Plastiques techniques </span> 
             </div>
-            <div class="div1">
-              <span>TRIER:</span><span>Nouveautés d'atelier</span>
+            <span> 8 pièces uniques disponibles </span>
+          </div>
+        </div>
+      </div>
+      <div class="catalog">
+        <div id="catalog1">
+          <div class="ateliye">
+            <div class="catalo1">
+              <div class="catalogh1"> <img class="sez" src="assets/icons/produit-icons/Icon (3).svg" alt=""> 100% Bouteilles de vin recyclées </div>
+              <div class="cataloghg1">-4.2 kg CO₂</div>
+              <div class="catalogp1"> Série numérotée • 12 ex. </div>
             </div>
-            <div>
-              <p>
-                MATIÈRE REVALORISÉE :Toutes les matières Bois revalorisé Tissus
-                & Textiles Verre surcycléPlastiques techniques 8 pièces uniques
-                disponibles
-              </p>
+            <div class="respon">
+              <div class="atelie">
+                <span>ART DE LA TABLE </span>
+                <span class="atelier"><img src="assets/icons/produit-icons/Icon (6).svg" alt=""> Atelier SolVerre (Lyon) </span>
+              </div>
+              <h2>Carafe Écume Brute</h2>
+              <div class="police"> 
+                <p>Fondue au four solaire basse température à partir de verre cullet… </p>
+              </div>
+              <div class="ateliy">
+                <div class="h2"><h1>48 € </h1><p>TVA incluse </p></div>
+                <div class="ajout"><img  class="icon2" src="assets/icons/produit-icons/Icon (5).svg" alt=""><div class="ajou"> Ajouter </div></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="catalog">
-          <div id="catalog1">
-            <div class="catalo1">
-              <div class="catalogh1">100% Bouteilles de vin recyclées</div>
-              <div class="cataloghg1">-4.2 kg CO₂</div>
-              <div class="catalogp1">Série numérotée • 12 ex.</div>
-            </div>
-            ART DE LA TABLE Atelier SolVerre (Lyon)
-            <h2>Carafe Écume Brute</h2>
-            <div class="police">
-              Fondue au four solaire basse température à partir de verre cullet…
-            </div>
-            <h2>48 €</h2>
-            Ajouter TVA incluse
-          </div>
-          <div id="catalog2">
+        <div id="catalog2">
+          <div class="ateliye">
             <div class="catalo2">
-              <div class="catalogh2">95% Chêne de charpente sauvé</div>
-              <div class="cataloghg2">-8.9 kg CO₂</div>
-              <div class="catalogp2">Plus que 2 exemplaires</div>
+              <div class="catalogh2"><img class="sez" src="assets/icons/produit-icons/Icon (1).svg" alt=""> 95% Chêne de charpente sauvé </div>
+              <div class="cataloghg2"> -8.9 kg CO₂ </div>
+              <div class="catalogp2"> Plus que 2 exemplaires</div>
             </div>
-            LUMINAIRE Marc Verdier (Morvan)
-            <h2>Lampe d'ambiance 'Bille</h2>
-            de Chêne' Poutre centenaire démontée d'une grange agricole, brossée
-            à l'huile… 135 € Ajouter Garantie 5 ans
-          </div>
-          <div id="catalog3">
-            <div class="catalo2">
-              <div class="catalogh2">Chutes de Lin Normand</div>
-              <div class="cataloghg2">-3.1 kg CO₂</div>
-              <div class="catalogp2">Pièce Unique (#47)</div>
+            <div class="respon">
+              <div class="atelie">
+                <span>LUMINAIRE</span>
+                <span class="atelier"><img src="assets/icons/produit-icons/Icon (6).svg" alt=""> Marc Verdier (Morvan) </span>
+              </div>
+              <h2> Lampe d'ambiance 'Bille de Chêne' </h2>
+              <div class="police"> 
+                <p>Poutre centenaire démontée d'une grange agricole, brossée à l'huile…</p>
+              </div>
+              <div class="ateliy">
+                <div class="h2"><h1> 135 € </h1><p> Garantie 5 ans </p></div>
+                <div class="ajout"><img  class="icon2" src="assets/icons/produit-icons/Icon (5).svg" alt=""><div class="ajou">  Ajouter </div></div>
+              </div>
             </div>
-            SALON Tissage Re-Vie (Roubaix)
-            <h2>Coussin Géométrique'Parcelle'</h2>
-            Assemblage minutieux de surplus de filatures françaises et
-            rembourrage en… 55 € Ajouter Fait main 100%
           </div>
-          <div id="catalog4">
-            <div class="catalo2">
-              <div class="catalogh2">100% Déchets Plastiques</div>
-              <div class="cataloghg2">Marins -12.4 kg</div>
-              <div class="catalogp2">CO₂ Série Éditeur • 8 ex.</div>
+        </div>
+        <div id="catalog3">
+          <div class="ateliye">
+            <div class="catalo3">        
+              <div class="catalogh3"><img class="sez" src="assets/icons/produit-icons/Icon (2).svg" alt=""> Chutes de Lin Normand</div>
+              <div class="cataloghg3">-3.1 kg CO₂ </div>
+              <div class="catalogp3"> Pièce Unique (#47)</div>
             </div>
-            CO₂ Série Éditeur • 8 ex. MOBILIER Plastik Lab (Brest)
-            <h2>Assise Terrazzo 'Estran'</h2>
-            Thermo-pressage sans colle de bouchons et filets de pêche récupérés…
-            180 € Ajouter Inaltérable & lavable
-          </div>
-          <div id="catalog5">
-            <div class="catalo5">
-              <div class="catalogh5">100% Bocaux & Verre Cullet</div>
-              <div class="cataloghg5">-5.0 kg CO₂</div>
-              <div class="catalogp5">Pièce Unique (#12)</div>
+            <div class="respon">
+              <div class="atelie">
+                <span>SALON</span>
+                <span class="atelier"><img src="assets/icons/produit-icons/Icon (6).svg" alt=""> Tissage Re-Vie (Roubaix) </span>
+              </div>
+              <h2>Coussin Géométrique 'Parcelle'</h2>
+              <div class="police"> 
+                <p>Assemblage minutieux de surplus de filatures françaises et rembourrage en…</p>
+              </div>
+              <div class="ateliy">
+                <div class="h2"><h1> 55 € </h1><p> Fait main 100% </p></div>
+                <div class="ajout"><img  class="icon2" src="assets/icons/produit-icons/Icon (5).svg" alt=""><div class="ajou"> Ajouter </div></div>
+              </div>
             </div>
-            DÉCORATION Verrerie d'Anjou
-            <h2>Soliflore Organique'Goutte'</h2>
-            Façonné à la canne traditionnelle sans moule industriel, chaque
-            reflet est le… 62 € Ajouter Signature pyrogravée
           </div>
-          <div id="catalog6">
-            <div class="catalo6">
-              <div class="catalogh6">Chutes d'Ébénisterie Locale</div>
+        </div>
+        <div id="catalog4">
+          <div class="ateliye">
+            <div class="catalo4">        
+              <div class="catalogh4"><img claas="sez" src="assets/icons/produit-icons/Icon-1.svg" alt=""> 100% Déchets Plastiques</div>
+              <div class="cataloghg4"> Marins -12.4 kg</div>
+              <div class="catalogp4"> CO₂ Série Éditeur • 8 ex.</div>
+            </div>
+            <div class="respon">
+              <div class="atelie">
+                <span>MOBILIER</span>
+                <span class="atelier"><img src="assets/icons/produit-icons/Icon (6).svg" alt="">Plastik Lab (Brest)</span>
+              </div>
+              <h2>Assise Terrazzo 'Estran'</h2>
+              <div class="police"> 
+               <p>Thermo-pressage sans colle de bouchons et filets de pêche récupérés… </p>
+              </div>
+              <div class="ateliy">
+                <div class="h2"><h1> 180 € </h1><p> Inaltérable & lavable </p></div>
+                <div class="ajout"><img  class="icon2" src="assets/icons/produit-icons/Icon (5).svg" alt=""><div class="ajou"> Ajouter </div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catalog5">
+          <div class="ateliye">
+            <div class="catalo5">        
+              <div class="catalogh5"><img  class="sez" src="assets/icons/produit-icons/Icon (3).svg" alt=""> 100% Bocaux & Verre Cullet</div>
+              <div class="cataloghg5"> -5.0 kg CO₂</div>
+              <div class="catalogp5"> Pièce Unique (#12)</div>
+            </div>
+            <div class="respon">
+              <div class="atelie">
+                <span>DÉCORATION</span>
+                <span class="atelier"><img src="assets/icons/produit-icons/Icon (6).svg" alt="">Verrerie d'Anjou</span>
+              </div>
+               <h2> Soliflore Organique'Goutte' </h2>
+              <div class="police"> 
+                  Façonné à la canne traditionnelle sans moule industriel, chaque reflet est le…  
+              </div>
+              <div class="ateliy">
+                <div class="h2"><h1> 62 € </h1><p> Signature pyrogravée </p></div>
+                <div class="ajout"><img  class="icon2" src="assets/icons/produit-icons/Icon (5).svg" alt=""><div class="ajou"> Ajouter</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catalog6">
+          <div class="ateliye">
+            <div class="catalo6">        
+              <div class="catalogh6"><img class="sez" src="assets/icons/produit-icons/Icon (1).svg" alt=""> Chutes d'Ébénisterie Locale</div>
               <div class="cataloghg6">-6.3 kg CO₂</div>
               <div class="catalogp6">Édition limitée • 15 ex.</div>
             </div>
-            ART DE LA TABLE Atelier Copeaux (Jura) Planche d'Apparat 'Mosaïque'
-            Chutes nobles de fabrication de meubles haut de gamme assemblées en
-            72 € Ajouter Finition cire d'abeille bio
+            <div class="respon">
+              <div class="atelie">
+                <span>ART DE LA TABLE</span>
+                <span class="atelier"><img src="assets/icons/produit-icons/Icon (6).svg" alt="">Atelier Copeaux (Jura)</span>
+              </div>
+              <h2> Planche d'Apparat 'Mosaïque' </h2>
+              <div class="police"> 
+                Chutes nobles de fabrication de meubles haut de gamme assemblées en
+              </div>
+              <div class="ateliy">
+                <div class="h2"><h1> 72 € </h1><p> Finition cire d'abeille bio </p></div>
+                <div class="ajout"><img  class="icon2" src="assets/icons/produit-icons/Icon (5).svg" alt=""><div class="ajou">  Ajouter </div></div>
+              </div>
+            </div>
           </div>
-          <div id="catalog7">
-            <div class="catalo7">
-              <div class="catalogh7">100% Flacons HDPE Ménagers</div>
+        </div>
+        <div id="catalog7">
+          <div class="ateliye">
+            <div class="catalo7">        
+              <div class="catalogh7"><img class="sez" src="assets/icons/produit-icons/Icon-1.svg" alt=""> 100% Flacons HDPE Ménagers</div>
               <div class="cataloghg7">2.8 kg CO₂</div>
               <div class="catalogp7">Stock : 6 ex.</div>
             </div>
-            DÉCORATION Studio Cycle (Nantes) Coupe Vide-Poche 'Sillage' Chaque
-            pièce arbore des marbrures aléatoires et uniques résultant de la… 34
-            € Ajouter Résistant à l'eau
+            <div class="respon">
+               <div class="atelie">
+                <span>ART DE LA TABLE</span>
+                <span class="atelier"><img src="assets/icons/produit-icons/Icon (6).svg" alt="">Atelier Copeaux (Jura)</span>
+              </div>
+              <h2>Coupe Vide-Poche 'Sillage'</h2>
+              <div class="police"> 
+                Chaque pièce arbore des marbrures aléatoires et uniques résultant de la…
+              </div>
+              <div class="ateliy">
+                <div class="h2"><h1> 34 €</h1><p> </p> <p> Résistant à l'eau </p></div>
+                <div class="ajout"><img  class="icon2" src="assets/icons/produit-icons/Icon (5).svg" alt=""><div class="ajou">  Ajouter </div></div>
+              </div>
+            </div>
           </div>
-          <div id="catalog8">
-            <div class="catalo8">
-              <div class="catalogh8">Voiles de Bateaux Surcyclées</div>
+        </div>
+        <div id="catalog8">
+          <div class="ateliye">
+            <div class="catalo8">        
+              <div class="catalogh8"><img  class="sez" src="assets/icons/produit-icons/Icon (2).svg" alt=""> Voiles de Bateaux Surcyclées</div>
               <div class="cataloghg8">-7.5 kg CO₂</div>
               <div class="catalogp8">Dernière pièce disponible</div>
             </div>
-            LUMINAIRE Atelier Vent Debout (Lorient) Suspension Cocon 'Grand
-            Large' Toiles de dacron régatées collectées en Bretagne, lavées à
-            l'eau de pluie et… 110 € Ajouter Câble textile lin 2m inclus
+            <div class="respon">
+              <div class="atelie">
+                <span>LUMINAIRE</span>
+                <span class="atelier"><img src="assets/icons/produit-icons/Icon (6).svg" alt="">Atelier Vent Debout (Lorient)</span>
+              </div>
+              <h2>Suspension Cocon 'Grand Large' </h2>
+              <div class="police"> 
+               Toiles de dacron régatées collectées en Bretagne, lavées à l'eau de pluie et…
+              </div>
+              <div class="ateliy">
+                <div class="h2"><h1> 110 € </h1><p> Câble textile lin 2m inclus </p></div>
+                <div class="ajout"><img  class="icon2" src="assets/icons/produit-icons/Icon (5).svg" alt=""><div class="ajou"> Ajouter </div></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div>
-          Affichage de 1 à 8 sur 24 créations disponibles 1 2 3 Page 1 sur 3
+      </div>
+      <div class="pagination1">
+        <div class="pagination">
+          <div class="page">
+            Affichage de <p>1 à 8 </p> sur <p> 24 </p> créations disponibles
+          </div>
+            <div class="numero">
+              < </p> <div class="un"> 1 </div><p> 2 </p> <p> 3 </p> <p> > </p>
+            </div>
+            <div class="total"> 
+              Page 1 sur 3
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
+        <section class="emballa">
+          <div class="emballage">
+            <div  class="emballag">
+              <img src="assets/icons/produit-icons/Icon (7).svg" alt="" class="icon">
+              <div>
+                <h3> Emballage Zéro Plastique</h3> 
+                <p>Calage en copeaux de bois d'atelier non traité et sachets d'amidon de maïs 100% compostables .</p>
+              </div>
+           </div>
+          </div>
+            <div class="emballage">
+              <div class="emballag">
+                <img src="assets/icons/produit-icons/Icon (8).svg" alt="" class="icon">
+                <div>
+                  <h3>Fret Éco-Responsable </h3>
+                    <p>Expéditions groupées bi-hebdomadaires privilégiant le rail et la livraison finale en vélo-cargo. </p>
+                </div>
+              </div>
+            </div>
+            <div class="emballage">
+            <div class="emballag">
+              <img src="assets/icons/produit-icons/Icon (9).svg" alt="" class="icon">
+              <div>
+                <h3>Passeport Numérique</h3>
+                <p>Chaque pièce inclut un certificat de provenance horodaté détaillant le site exact de valorisation du matériau.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </section>
     <footer class="site-footer">
-      <div class="footer-top">
-        <div class="footer-col brand">
-          <div class="brand-logo">
-            <img src="assets\icons\logo.png" alt="Logo" width="24" />
-          </div>
-          <p>
-            Plateforme d'artisanat circulaire valorisant les rebuts nobles.
-            Conception numérique sobre, traçabilité certifiée et réduction de
-            l'empreinte carbone matériel.
-          </p>
-          <div class="eco-badge">
-            <img
-              src="assets/icons/artisans-icons/Icon (1).svg"
-              alt="Check"
-              width="14"
-            />
-            Index Éco-Index : A
-          </div>
+        <div class="footer-top">
+            <div class="footer-col brand">
+                <div class="brand-logo">
+                    <img src="assets\icons\logo.png" alt="Logo" width="24">
+                </div>
+                <p>Plateforme d'artisanat circulaire valorisant les rebuts nobles. Conception numérique sobre, traçabilité certifiée et réduction de l'empreinte carbone matériel.</p>
+                <div class="eco-badge">
+                    <img src="assets/icons/artisans-icons/Icon (1).svg" alt="Check" width="14"> Index Éco-Index : A
+                </div>
+            </div>
+            
+            <div class="footer-col links">
+                <h3>Filière Circulaire</h3>
+                <ul>
+                    <li><a href="#">Bois de réemploi & chêne sauvé</a></li>
+                    <li><a href="#">Verre recyclé au four solaire</a></li>
+                    <li><a href="#">Textiles surcyclés d'ateliers</a></li>
+                    <li><a href="#">Métaux ferreux reconditionnés</a></li>
+                    <li><a href="#">Charte zéro déchet d'atelier</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col certifications">
+                <h3>Labels & Certifications</h3>
+                <div class="cert-card">
+                    <strong>Label Upcycling Certifié UE</strong>
+                    <p>Norme traçabilité matière brute à 100%</p>
+                </div>
+                <div class="cert-card">
+                    <strong>Garantie Artisans d'Art</strong>
+                    <p>Transmission et fabrication locale</p>
+                </div>
+            </div>
+            
+            <div class="footer-col newsletter">
+                <h3>Newsletter Sobre</h3>
+                <p class="news-desc">Une seule édition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
+                <form action="#" method="POST" class="news-form">
+                    <input type="email" placeholder="votre.email@domaine.fr" required>
+                    <button type="submit">S'inscrire</button>
+                </form>
+                <p class="privacy-note">Désinscription en 1 clic. Données hébergées en France.</p>
+            </div>
         </div>
 
-        <div class="footer-col links">
-          <h3>Filière Circulaire</h3>
-          <ul>
-            <li><a href="#">Bois de réemploi & chêne sauvé</a></li>
-            <li><a href="#">Verre recyclé au four solaire</a></li>
-            <li><a href="#">Textiles surcyclés d'ateliers</a></li>
-            <li><a href="#">Métaux ferreux reconditionnés</a></li>
-            <li><a href="#">Charte zéro déchet d'atelier</a></li>
-          </ul>
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2025 EcoArt (NextLine client). Tous droits réservés. Hébergement vert basse consommation Tél : +33 (0)1 89 45 20 10
+            </div>
+            <div class="legal-links">
+                <a href="#">Mentions Légales</a>
+                <a href="#">Accessibilité : Conforme RGAA</a>
+                <a href="#">Charte Éco-conception</a>
+            </div>
         </div>
-
-        <div class="footer-col certifications">
-          <h3>Labels & Certifications</h3>
-          <div class="cert-card">
-            <strong>Label Upcycling Certifié UE</strong>
-            <p>Norme traçabilité matière brute à 100%</p>
-          </div>
-          <div class="cert-card">
-            <strong>Garantie Artisans d'Art</strong>
-            <p>Transmission et fabrication locale</p>
-          </div>
-        </div>
-
-        <div class="footer-col newsletter">
-          <h3>Newsletter Sobre</h3>
-          <p class="news-desc">
-            Une seule édition mensuelle, sans scripts lourds ni pistage
-            publicitaire.
-          </p>
-          <form action="#" method="POST" class="news-form">
-            <input type="email" placeholder="votre.email@domaine.fr" required />
-            <button type="submit">S'inscrire</button>
-          </form>
-          <p class="privacy-note">
-            Désinscription en 1 clic. Données hébergées en France.
-          </p>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="copyright">
-          © 2025 EcoArt (NextLine client). Tous droits réservés. Hébergement
-          vert basse consommation Tél : +33 (0)1 89 45 20 10
-        </div>
-        <div class="legal-links">
-          <a href="#">Mentions Légales</a>
-          <a href="#">Accessibilité : Conforme RGAA</a>
-          <a href="#">Charte Éco-conception</a>
-        </div>
-      </div>
     </footer>
-  </body>
+  </main>
+
+</body>
+
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/impact.css">
     <link rel="stylesheet" href="CSS/variables.css">
+    <!-- <link rel="stylesheet" href="CSS/artisans.css"> -->
     <title>impact&contact</title>
 
       <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,24 +14,20 @@
     
 </head>
 <body>
-    <main>
-            <header class="en-tete">
-      <div class="conteneur en-tete-contenu">
-        <a href="index.html" class="logo">
-          <img src="assets/icons/logo.png" alt="logo" id="logo"
-        /></a>
-
-        <nav aria-label="Navigation principale">
-          <ul class="menu">
-            <li><a href="index.html" class="lien-actif">Accueil</a></li>
-            <li><a href="produit.html">Catalogue Produits - EcoArt</a></li>
-            <li><a href="artisans.html">Nos Artisans - EcoArt</a></li>
-            <li><a href="service.html">Ateliers & Services - EcoArt</a></li>
-            <li><a href="impact.html">Impact & Contact - EcoArt</a></li>
-          </ul>
+<main>
+    <header class="header-1">
+        <a href="index.html"><img src="assets/icons/logo.png" alt="Logo EcoArt" height="40" ></a>
+        <nav class="places">
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Catalogue</a></li>
+                <li><a href="service.html">Ateliers & Services</a></li>
+                <li><a href="artisans.html" >Nos Artisans</a></li>
+                <li><a href="impact.html" class="btn-actif">Impact & Contact</a></li>
+            </ul>
         </nav>
-      </div>
     </header>
+
     <section class="first">
     <div class="ContextIndicator">
         <div class="statiIcon">
@@ -50,13 +47,14 @@
     </section>
 
     <section class="scoreboard">
+       
         <div class="matric">
             <div class="matricUp">
                 <img src="assets/icons/contact-icons/Icon (1).svg" alt="" class="icons">
                 <p class="para2"><b>+34% vs 2024</b></p>
             </div>
             <div class="matricDown">
-                 <p class="para1"> <b>18450 kg</b></p>
+                 <p class="para1"> <b>18450 <span class="kg">kg</span></b></p>
                 <h2>Rebuts nobles valorisés</h2>
                 <p>Chutes d'ateliers, bois de charpente etrebuts industriels recyclés.</p>
             </div>
@@ -68,7 +66,7 @@
                 <p class="para2"><b>Évitement direct</b></p>
             </div>
                 <div class="matricDown1">
-                <p class="para1"><b>32,8t co2e</b></p>
+                <p class="para1"><b>32,8t <span class="co2">t CO₂e</span></b></p>
                 <h2>Émissions évitées</h2>
                 <p>Comparé à la production industrielle d'équivalents neufs non-circulaires.</p>
             </div>
@@ -79,7 +77,7 @@
                 <p class="para2"><b>Filière sèche</b></p>
             </div>
                 <div class="matricDown">
-                <p class="para1"><b>142000 L</b></p>
+                <p class="para1"><b>142000 <span class="kg">L</span></b></p>
                 <h2>eau portable préservée</h2>
                 <p>Procédés de décapage et teinture végétale à circuit fermé</p>
             </div>
@@ -90,7 +88,7 @@
                 <p class="para2"><b>Social & Inclusion</b></p>
             </div>
             <div class="matricDown1">
-                <p class="para1"><b>820 hrs</b></p>
+                <p class="para1"><b>820 <span class="co2">hrs</span></b></p>
                 <h2>Transmission & Ateliers</h2>
                 <p>Apprentissage de la réparation, du surcylage et insertion locale</p>
             </div>
@@ -170,11 +168,11 @@
                 </div>
                 <div class="norme">
                     <div class="normeIcon">
-                        <img src="assets/icons/service-icons/Icon (15).svg" alt="" class="icons">
+                        <img src="assets/icons/service-icons/Icon (15).svg" alt="" class="icons photo">
                         <p>Norme ISO pour le bilan matière</p>
                     </div>
                     <div  class="normeIcon">
-                        <img src="assets/icons/service-icons/Icon (15).svg" alt="" class="icons">
+                        <img src="assets/icons/service-icons/Icon (15).svg" alt="" class="icons photo">
                         <p>Certification Ateliers d'Art de Frence</p>
                     </div>
                     <div  class="normeIcon">
@@ -297,7 +295,7 @@
                     <button type="submit">Envoyer mon message éco-responsable <img src="assets/icons/contact-icons/Icon (13).svg" alt="" class="icons"></button>  
                     <div class="checkIcon">
                         <img src="assets/icons/contact-icons/Icon (14).svg" alt="" class="icons">
-                        <h3>Réponse artisanale sous 24h ouvrées</h3>
+                        <p><b>Réponse artisanale sous 24h ouvrées</b></p>
                     </div>
                 </div>
             </div>
@@ -312,13 +310,13 @@
                     <img src="assets/icons/contact-icons/Icon88.svg" alt="" class="icons">
                     <h3>Réseau des 14 Ateliers Partenaires</h3>
                 </div>
-                <p>En plus du tiers-lieu parisien, nos ateliers de forge, verrerie soaire et tissage se déploient en Nouvelle-Aquitaine, Auvergne-Rhone-Alpes et Bretagne .</p>
+                <p id="lastP">En plus du tiers-lieu parisien, nos ateliers de forge, verrerie soaire et tissage se déploient en Nouvelle-Aquitaine, Auvergne-Rhone-Alpes et Bretagne .</p>
                 <a href="#">Découvrir la carte complète des artisans ></a> 
             </div> 
             
         </div>
-    </section>
-    <div class="final">
+        </section>
+        <div class="final">
         <p>FOIRE AUX QUESTINS</p>
         <h2>Questions Fréquentes sur notre Impact</h2>
         <select name="" id="">   
@@ -331,11 +329,11 @@
             <option value="Q1" id="Q1">Proposez-vous des formats d'ateliers pour les équipes RSE d'entreprises ?</option>
         </select>
          </div>
-    <section>
-
     </section>
 
-    </main>
+    </section>
+      
+
         <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-col brand">
@@ -393,5 +391,7 @@
             </div>
         </div>
     </footer>
+</main>
+  
 </body>
 </html>
